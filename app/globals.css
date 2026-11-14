@@ -1,26 +1,490 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.never-enough-backdrop {
+  display: block;
+}
+
+.cmiygl-backdrop {
+  display: none;
+}
+
+.film-grain-overlay {
+  background-image: url('/images/film-grain.png');
+  background-repeat: repeat;
+  background-size: 128px 128px;
+}
+
+html[data-theme="light"] .never-enough-backdrop,
+[data-theme="light"] .never-enough-backdrop,
+html:not(.dark) .never-enough-backdrop {
+  display: none !important;
+}
+
+html[data-theme="light"] .cmiygl-backdrop,
+[data-theme="light"] .cmiygl-backdrop,
+html:not(.dark) .cmiygl-backdrop {
+  display: block !important;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Tyler, The Creator 'CALL ME IF YOU GET LOST' Stars & Float
+   ───────────────────────────────────────────────────────────── */
+.cmiygl-stars-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 380px;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 8;
+}
+
+.cmiygl-star {
+  position: absolute;
+  will-change: transform;
+  filter: drop-shadow(0 2px 4px rgba(70, 45, 20, 0.08));
+}
+
+@keyframes cmiygl-float-1 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-7px) rotate(5deg);
+  }
+}
+
+@keyframes cmiygl-float-2 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(6px) rotate(-6deg);
+  }
+}
+
+@keyframes cmiygl-float-3 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(-4deg);
+  }
+}
+
+.cmiygl-float-1 {
+  animation: cmiygl-float-1 7s ease-in-out infinite;
+}
+
+.cmiygl-float-2 {
+  animation: cmiygl-float-2 8.5s ease-in-out infinite;
+}
+
+.cmiygl-float-3 {
+  animation: cmiygl-float-3 6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cmiygl-float-1,
+  .cmiygl-float-2,
+  .cmiygl-float-3 {
+    animation: none !important;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Pixel Birds Micro-Animation (2-Direction Converging Perspective)
+   ───────────────────────────────────────────────────────────── */
+.pixel-birds-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 280px;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.pixel-bird {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  shape-rendering: crispEdges;
+  will-change: transform, opacity;
+}
+
+.pixel-bird svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  fill: #9BBFFF;
+  filter: drop-shadow(0 1px 2px rgba(7, 5, 18, 0.6));
+}
+
+/* Wing flapping with organic gliding pauses */
+.bird-frame-1 { animation: bird-f1 1.6s infinite steps(1); }
+.bird-frame-2 { animation: bird-f2 1.6s infinite steps(1); }
+.bird-frame-3 { animation: bird-f3 1.6s infinite steps(1); }
+
+@keyframes bird-f1 {
+  0%, 9.9%, 40%, 49.9% { opacity: 1; }
+  10%, 39.9%, 50%, 100% { opacity: 0; }
+}
+
+@keyframes bird-f2 {
+  0%, 9.9%, 20%, 29.9%, 40%, 49.9%, 60%, 69.9% { opacity: 0; }
+  10%, 19.9%, 30%, 39.9%, 50%, 59.9%, 70%, 100% { opacity: 1; }
+}
+
+@keyframes bird-f3 {
+  0%, 19.9%, 30%, 59.9%, 70%, 100% { opacity: 0; }
+  20%, 29.9%, 60%, 69.9% { opacity: 1; }
+}
+
+/* 1. Left Diagonal Streams -> Center Horizon (Menjauh & Menghilang) */
+@keyframes fly-left-lead {
+  0% {
+    transform: translate3d(-8vw, 185px, 0) scale(1.15);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.65;
+  }
+  45% {
+    transform: translate3d(22vw, 132px, 0) scale(0.72);
+    opacity: 0.52;
+  }
+  75% {
+    transform: translate3d(38vw, 98px, 0) scale(0.40);
+    opacity: 0.30;
+  }
+  92% {
+    opacity: 0.08;
+  }
+  100% {
+    transform: translate3d(49vw, 82px, 0) scale(0.15);
+    opacity: 0;
+  }
+}
+
+@keyframes fly-left-sub {
+  0% {
+    transform: translate3d(-14vw, 205px, 0) scale(0.95);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.55;
+  }
+  45% {
+    transform: translate3d(19vw, 145px, 0) scale(0.60);
+    opacity: 0.42;
+  }
+  75% {
+    transform: translate3d(36vw, 108px, 0) scale(0.32);
+    opacity: 0.22;
+  }
+  92% {
+    opacity: 0.06;
+  }
+  100% {
+    transform: translate3d(47.5vw, 90px, 0) scale(0.12);
+    opacity: 0;
+  }
+}
+
+/* 2. Right Diagonal Streams -> Center Horizon (Menjauh & Menghilang, Mirrored) */
+@keyframes fly-right-lead {
+  0% {
+    transform: translate3d(108vw, 185px, 0) scaleX(-1) scale(1.15);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.65;
+  }
+  45% {
+    transform: translate3d(78vw, 132px, 0) scaleX(-1) scale(0.72);
+    opacity: 0.52;
+  }
+  75% {
+    transform: translate3d(62vw, 98px, 0) scaleX(-1) scale(0.40);
+    opacity: 0.30;
+  }
+  92% {
+    opacity: 0.08;
+  }
+  100% {
+    transform: translate3d(51vw, 82px, 0) scaleX(-1) scale(0.15);
+    opacity: 0;
+  }
+}
+
+@keyframes fly-right-sub {
+  0% {
+    transform: translate3d(114vw, 205px, 0) scaleX(-1) scale(0.95);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.55;
+  }
+  45% {
+    transform: translate3d(81vw, 145px, 0) scaleX(-1) scale(0.60);
+    opacity: 0.42;
+  }
+  75% {
+    transform: translate3d(64vw, 108px, 0) scaleX(-1) scale(0.32);
+    opacity: 0.22;
+  }
+  92% {
+    opacity: 0.06;
+  }
+  100% {
+    transform: translate3d(52.5vw, 90px, 0) scaleX(-1) scale(0.12);
+    opacity: 0;
+  }
+}
+
+.bird-left-lead {
+  animation: fly-left-lead 17s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+.bird-left-sub {
+  animation: fly-left-sub 17s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  animation-delay: -1.6s;
+}
+
+.bird-right-lead {
+  animation: fly-right-lead 19s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  animation-delay: -7.5s;
+}
+
+.bird-right-sub {
+  animation: fly-right-sub 19s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  animation-delay: -9.1s;
+}
+
+@media (min-width: 768px) {
+  @keyframes fly-left-lead {
+    0% {
+      transform: translate3d(-8vw, 215px, 0) scale(1.2);
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.65;
+    }
+    45% {
+      transform: translate3d(24vw, 150px, 0) scale(0.75);
+      opacity: 0.52;
+    }
+    75% {
+      transform: translate3d(39vw, 108px, 0) scale(0.42);
+      opacity: 0.32;
+    }
+    92% {
+      opacity: 0.08;
+    }
+    100% {
+      transform: translate3d(49vw, 88px, 0) scale(0.18);
+      opacity: 0;
+    }
+  }
+
+  @keyframes fly-left-sub {
+    0% {
+      transform: translate3d(-14vw, 235px, 0) scale(1.0);
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.55;
+    }
+    45% {
+      transform: translate3d(21vw, 165px, 0) scale(0.62);
+      opacity: 0.42;
+    }
+    75% {
+      transform: translate3d(37vw, 118px, 0) scale(0.35);
+      opacity: 0.22;
+    }
+    92% {
+      opacity: 0.06;
+    }
+    100% {
+      transform: translate3d(47.5vw, 96px, 0) scale(0.14);
+      opacity: 0;
+    }
+  }
+
+  @keyframes fly-right-lead {
+    0% {
+      transform: translate3d(108vw, 215px, 0) scaleX(-1) scale(1.2);
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.65;
+    }
+    45% {
+      transform: translate3d(76vw, 150px, 0) scaleX(-1) scale(0.75);
+      opacity: 0.52;
+    }
+    75% {
+      transform: translate3d(61vw, 108px, 0) scaleX(-1) scale(0.42);
+      opacity: 0.32;
+    }
+    92% {
+      opacity: 0.08;
+    }
+    100% {
+      transform: translate3d(51vw, 88px, 0) scaleX(-1) scale(0.18);
+      opacity: 0;
+    }
+  }
+
+  @keyframes fly-right-sub {
+    0% {
+      transform: translate3d(114vw, 235px, 0) scaleX(-1) scale(1.0);
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.55;
+    }
+    45% {
+      transform: translate3d(79vw, 165px, 0) scaleX(-1) scale(0.62);
+      opacity: 0.42;
+    }
+    75% {
+      transform: translate3d(63vw, 118px, 0) scaleX(-1) scale(0.35);
+      opacity: 0.22;
+    }
+    92% {
+      opacity: 0.06;
+    }
+    100% {
+      transform: translate3d(52.5vw, 96px, 0) scaleX(-1) scale(0.14);
+      opacity: 0;
+    }
+  }
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+
+    /* Daniel Caesar NEVER ENOUGH Nocturnal Palette */
+    --background: #070512;
+    --background-secondary: #141038;
+
+    /* Surfaces */
+    --surface: #0e0a24;
+    --surface-hover: #17113a;
+
+    /* Typography */
+    --foreground: #F5F4FF;
+    --foreground-secondary: #B4B1D2;
+    --muted: #7E7A9E;
+
+    /* Brand Accent Colors (Electric Twilight Cobalt & Cyan Glow) */
+    --accent: #2347DF;
+    --accent-text: #7FA8FF;
+    --accent-secondary: #182B8F;
+    --accent-hover: #3359FA;
+
+    /* Borders & Outlines */
+    --border: #241D4E;
+
+    /* Interaction & Focus */
+    --focus-ring: #5580FF;
+  }
+
+  [data-theme="light"] {
+    color-scheme: light;
+
+    /* Tyler, The Creator 'CALL ME IF YOU GET LOST' Palette */
+    --background: #FAF4E1;
+    --background-secondary: #F2E9CD;
+
+    /* Surfaces: Warm vintage passport cream paper */
+    --surface: #FFFDF7;
+    --surface-hover: #ECE1BC;
+
+    /* Typography: Deep espresso leather brown & warm luggage sepia */
+    --foreground: #211610;
+    --foreground-secondary: #5C483A;
+    --muted: #826E5F;
+
+    /* Brand Accent Colors: Tyler Cardigan Baby Blue / Cyan (WCAG AA compliant) */
+    --accent: #186D88;
+    --accent-text: #186D88;
+    --accent-secondary: #268EAE;
+    --accent-hover: #12566C;
+
+    /* Borders & Outlines: Vintage luggage paper border */
+    --border: #E3D7B8;
+
+    /* Interaction & Focus */
+    --focus-ring: #186D88;
+  }
+
+  * {
+    border-color: var(--border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  ::selection {
+    background-color: var(--accent);
+    color: #FFFFFF;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--focus-ring);
+    outline-offset: 2px;
+  }
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-background-secondary: var(--background-secondary);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-foreground-secondary: var(--foreground-secondary);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-text: var(--accent-text);
+  --color-accent-secondary: var(--accent-secondary);
+  --color-accent-hover: var(--accent-hover);
+  --color-border: var(--border);
+  --color-focus-ring: var(--focus-ring);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  --font-sans: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 }
