@@ -258,7 +258,7 @@ export const translations: Record<Language, TranslationSchema> = {
     },
     about: {
       index: "01 //",
-      eyebrow: "LATAR BELAKANG & FILOSOFI",
+      eyebrow: "LATAR BELAKANG",
       title: "Sekilas tentang apa yang saya kerjakan.",
       description: "Menjembatani disiplin rekayasa perangkat lunak dengan kecerdasan buatan terapan untuk menghasilkan solusi nyata.",
       pillar1Title: "Rekayasa Web Full-Stack",
