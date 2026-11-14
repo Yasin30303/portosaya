@@ -448,6 +448,12 @@ html:not(.dark) .cmiygl-backdrop {
       transition-duration: 0.01ms !important;
       scroll-behavior: auto !important;
     }
+    /* Guarantee no elements get stuck at opacity: 0 for reduced-motion visitors */
+    [style*="opacity: 0"],
+    [style*="opacity:0"] {
+      opacity: 1 !important;
+      transform: none !important;
+    }
   }
 
   body {

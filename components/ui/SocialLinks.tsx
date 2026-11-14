@@ -21,9 +21,9 @@ export function SocialLinks({
   iconSize = "md",
 }: SocialLinksProps) {
   const sizeMap = {
-    sm: "w-8 h-8 p-1.5",
-    md: "w-9 h-9 p-2",
-    lg: "w-10 h-10 p-2.5",
+    sm: "min-w-[44px] min-h-[44px] w-11 h-11 p-2.5",
+    md: "min-w-[44px] min-h-[44px] w-11 h-11 p-3",
+    lg: "min-w-[48px] min-h-[48px] w-12 h-12 p-3.5",
   };
 
   const iconClasses = {

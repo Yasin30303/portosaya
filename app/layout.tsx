@@ -44,16 +44,28 @@ export const metadata: Metadata = {
   creator: profileData.name,
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "id_ID",
     url: "https://muhammad-yasin.dev",
     title: `${profileData.name} | ${profileData.role}`,
     description: profileData.headline,
     siteName: `${profileData.name} Portfolio`,
+    images: [
+      {
+        url: "/images/cmiygl-scenery.webp",
+        width: 1376,
+        height: 768,
+        alt: `${profileData.name} Portfolio Preview`,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: `${profileData.name} | ${profileData.role}`,
     description: profileData.headline,
+    images: ["/images/cmiygl-scenery.webp"],
+  },
+  alternates: {
+    canonical: "https://muhammad-yasin.dev",
   },
   robots: {
     index: true,
