@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { getAllProjects } from "@/lib/projects";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://muhammad-yasin.dev";
+  const baseUrl = "https://nuainay.vercel.app";
   const projects = getAllProjects();
   const buildDate = new Date("2026-11-14T00:00:00.000Z");
 

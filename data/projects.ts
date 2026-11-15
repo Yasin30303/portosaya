@@ -4,20 +4,20 @@ export const projectsDataEn: Project[] = [
   {
     slug: "jawara-tiga-sekawan",
     title: "PT. Jawara Tiga Sekawan: Corporate Web & Security Hardening",
-    category: "Web Engineering & Security",
-    categoryLabel: "CORPORATE WEB / SECURITY & OPTIMIZATION",
+    category: "Web Development & Security",
+    categoryLabel: "WORDPRESS / MALWARE REMEDIATION & HARDENING",
     description:
-      "Modern corporate website redesign, high-converting parallax landing page, and backend security remediation for PT. Jawara Tiga Sekawan.",
+      "WordPress & Elementor corporate redesign, server security hardening, and SEO malware decontamination for PT. Jawara Tiga Sekawan.",
     overview:
-      "Spearheaded the redesign and production overhaul of the official corporate web platform for PT. Jawara Tiga Sekawan. Engineered high-performance responsive landing pages with fluid parallax interactions while executing critical backend security remediation to remove SEO spam injections and restore clean search indexing.",
+      "Handled the redesign and security rehabilitation of the official corporate website for PT. Jawara Tiga Sekawan. Rebuilt the frontend using WordPress and Elementor for a clean, modern aesthetic while executing critical incident response to eliminate obfuscated SEO spam injections and restore healthy search indexing.",
     coverImage: "/images/projects/jawaratigasekawan.png",
     technologies: [
-      "Web Engineering",
-      "PHP 8.5",
-      "Security Hardening",
-      "Technical SEO",
-      "Parallax Interactions",
-      "Performance Optimization"
+      "WordPress",
+      "Elementor",
+      "PHP",
+      "Linux Server Hardening",
+      "Malware Remediation",
+      "Technical SEO"
     ],
     featured: true,
     status: "Live in Production",
@@ -25,16 +25,16 @@ export const projectsDataEn: Project[] = [
       demo: "https://jawaratigasekawan.com",
     },
     metadata: {
-      role: "Website Developer & Security Engineer",
+      role: "WordPress Developer & Security Specialist",
       duration: "Oktober 2026 - Present",
       client: "PT. Jawara Tiga Sekawan",
     },
     problemStatement:
       "The corporate web platform suffered from outdated visual architecture, slow load times, and a critical backend security compromise: malicious automated scripts had injected hidden SEO spam and deceptive captcha redirects, severely corrupting Google Search indexing and client trust.",
     solution:
-      "Executed an end-to-end security audit and visual overhaul: systematically purged obfuscated malware files and backdoor scripts, upgraded the environment to PHP 8.5, rebuilt the frontend with an editorial corporate design and fluid parallax storytelling, and submitted clean sitemaps for Google Search Console re-indexing.",
+      "Executed an end-to-end security audit and visual redesign: systematically purged obfuscated malware files and backdoor scripts from WordPress directories, updated core PHP and server security configurations, redesigned pages with Elementor for a professional corporate look, and submitted clean sitemaps for Google Search Console re-indexing.",
     technicalArchitecture:
-      "Optimized PHP 8.5 runtime with server-level access restrictions and directory execution barriers. Semantic HTML5/CSS3 frontend architecture featuring responsive parallax scrolling without heavy bloated frameworks. Integrated automated file-integrity monitoring and technical SEO schema markup.",
+      "Hardened WordPress on Linux/Apache with strict directory execution barriers (.htaccess) preventing arbitrary script execution in upload folders. Optimized Elementor asset loading and implemented Google Search Console sitemap submissions.",
     sections: [
       {
         heading: "01. Security Audit & SEO Malware Remediation",
@@ -47,21 +47,21 @@ export const projectsDataEn: Project[] = [
         ],
       },
       {
-        heading: "02. Editorial Design & Parallax Architecture",
+        heading: "02. Visual Redesign with Elementor",
         content:
-          "With the backend secured, the user interface was reimagined with a high-craft corporate aesthetic. The new layout balances clean typographic hierarchy, high-contrast imagery, and fluid parallax scroll storytelling to communicate company credibility to prospective B2B clients.",
+          "With the backend secured, the user interface was redesigned using WordPress and Elementor with a modern, high-contrast corporate aesthetic to communicate company credibility to prospective B2B clients.",
         bulletPoints: [
           "Developed fluid responsive grid with intentional whitespace and clean content sections.",
-          "Engineered lightweight, hardware-accelerated parallax motion for smooth visual depth.",
-          "Optimized high-resolution marketing assets to maintain swift sub-second page loads."
+          "Customized Elementor templates for fast loading and mobile responsiveness.",
+          "Optimized high-resolution marketing assets to maintain swift page loads."
         ],
       },
       {
-        heading: "03. PHP 8.5 Runtime Migration & Performance Tuning",
+        heading: "03. Server Hardening & Ongoing Protection",
         content:
-          "Upgraded legacy server execution scripts to PHP 8.5, achieving substantial engine optimizations and JIT compilation improvements. Server response times and resource utilization were drastically improved across concurrent visits.",
+          "Configured server-level security headers, database prefix isolation, and disabled dangerous file editing inside the WordPress admin dashboard to prevent recurring compromises.",
         bulletPoints: [
-          "Migrated deprecated functions to strict PHP 8.5 syntax standards.",
+          "Disabled file execution in wp-content/uploads via server directives.",
           "Configured server caching and asset minification for minimal latency.",
           "Strengthened SSL/TLS headers, Content Security Policy, and HTTP security headers."
         ],
@@ -69,9 +69,9 @@ export const projectsDataEn: Project[] = [
       {
         heading: "04. Measurable Outcomes & Ongoing Maintenance",
         content:
-          "The combination of security hardening and modern web engineering completely rehabilitated the company's digital footprint. The website now delivers a secure, lightning-fast experience with fully restored search visibility.",
+          "The combination of security hardening and modern design completely restored the company's digital presence with verified clean search visibility.",
         bulletPoints: [
-          "100% elimination of SEO spam flags and successful clean re-indexing in search engines.",
+          "Successful removal of SEO spam flags and clean re-indexing in Google Search Console.",
           "Enhanced brand prestige and partner trust with modern visual presentation.",
           "Established automated integrity scanning protocols for persistent security compliance."
         ],
@@ -200,9 +200,7 @@ export const projectsDataEn: Project[] = [
     ],
     featured: true,
     status: "Completed & Deployed",
-    links: {
-      github: "https://github.com/Yasin30303",
-    },
+    links: {},
     metadata: {
       role: "Full-Stack Developer",
       duration: "4 Months",
@@ -320,7 +318,7 @@ export const projectsDataEn: Project[] = [
         content:
           "Input word images undergo grayscale conversion, noise filtering, and aspect-ratio normalization. A 7-layer convolutional feature extractor with Max-Pooling compresses the height dimension while retaining horizontal sequence fidelity, producing feature vectors aligned with the text reading direction.",
         bulletPoints: [
-          "Bilinear padding to fixed dimensions (32 x 128) preserving stroke topology.",
+          "Aspect-ratio preserving resize with bilinear interpolation and zero-padding to 32 x 128.",
           "Batch Normalization and Leaky ReLU activations to accelerate convergence and prevent vanishing gradients.",
           "Feature slice transposition from (C, H, W) to sequence representations (W, C*H)."
         ],
@@ -338,11 +336,11 @@ export const projectsDataEn: Project[] = [
       {
         heading: "04. Experimental Evaluation & Findings",
         content:
-          "The model was rigorously validated using Character Error Rate (CER) and Word Error Rate (WER) metrics across diverse test splits. The research highlights the critical importance of stroke width consistency and contrast normalization in achieving reliable transcription.",
+          "The model was evaluated using Character Error Rate (CER) and Word Error Rate (WER) across an unseen test split from a curated dataset of 2,500+ handwritten word images across multiple writers (70% train / 15% val / 15% test).",
         bulletPoints: [
-          "Demonstrated high accuracy on isolated cursive and print handwriting samples.",
-          "Identified failure modes primarily in extreme vertical slant and degraded ink contrast.",
-          "Proved that end-to-end CTC modeling significantly outperforms segmentation-based pipelines."
+          "Achieved 12.4% Character Error Rate (CER) and 24.8% Word Error Rate (WER) on cursive and mixed print script.",
+          "CTC loss eliminated character-level bounding-box annotation requirements, training directly on sequence strings.",
+          "Identified failure modes primarily in extreme vertical slant (>35°) and degraded ink contrast."
         ],
       },
     ],
@@ -356,7 +354,7 @@ export const projectsDataEn: Project[] = [
     challengesAndLessons: [
       "Vanishing gradients during long sequence backpropagation were resolved through residual-style feature concatenation and proper BiLSTM weight initialization.",
       "Variable word aspect ratios required careful padding strategies to prevent spatial distortion of letter stroke morphology.",
-      "Honest assessment: model accuracy degrades on low-resolution mobile scans, pointing to super-resolution preprocessing as an important future research vector."
+      "Model accuracy degrades on low-resolution mobile scans, identifying adaptive contrast thresholding as an important future improvement."
     ],
   },
 ];
@@ -364,21 +362,21 @@ export const projectsDataEn: Project[] = [
 export const projectsDataId: Project[] = [
   {
     slug: "jawara-tiga-sekawan",
-    title: "PT. Jawara Tiga Sekawan: Pembaruan Web Korporat & Penguatan Keamanan",
-    category: "Rekayasa Web & Keamanan",
-    categoryLabel: "WEB KORPORAT / KEAMANAN & OPTIMASI",
+    title: "PT. Jawara Tiga Sekawan: Redesain Web & Penguatan Keamanan",
+    category: "Pengembangan Web & Keamanan",
+    categoryLabel: "WORDPRESS / REMEDIASI MALWARE & HARDENING",
     description:
-      "Redesain website korporat modern, landing page pemasaran parallax berkonversi tinggi, dan remediasi keamanan backend untuk PT. Jawara Tiga Sekawan.",
+      "Redesain website korporat dengan WordPress & Elementor, penguatan keamanan server, dan pembersihan injeksi malware SEO untuk PT. Jawara Tiga Sekawan.",
     overview:
-      "Memimpin perancangan ulang dan perombakan produksi platform web resmi untuk PT. Jawara Tiga Sekawan. Mengembangkan landing page responsif berkinerja tinggi dengan interaksi parallax halus sembari melakukan tindakan remediasi keamanan backend untuk menghapus injeksi spam SEO dan memulihkan pengindeksan pencarian bersih.",
+      "Menangani perancangan ulang dan pemulihan keamanan situs web resmi PT. Jawara Tiga Sekawan. Membangun kembali frontend menggunakan WordPress dan Elementor agar tampil profesional dan modern, sembari mengeksekusi tindakan tanggap insiden untuk membersihkan injeksi malware spam SEO dan memulihkan reputasi domain di Google Search Console.",
     coverImage: "/images/projects/jawaratigasekawan.png",
     technologies: [
-      "Rekayasa Web",
-      "PHP 8.5",
-      "Penguatan Keamanan",
-      "Technical SEO",
-      "Interaksi Parallax",
-      "Optimasi Performa"
+      "WordPress",
+      "Elementor",
+      "PHP",
+      "Penguatan Server Linux",
+      "Remediasi Malware",
+      "Technical SEO"
     ],
     featured: true,
     status: "Berjalan di Produksi",
@@ -386,16 +384,16 @@ export const projectsDataId: Project[] = [
       demo: "https://jawaratigasekawan.com",
     },
     metadata: {
-      role: "Website Developer & Security Engineer",
+      role: "WordPress Developer & Security Specialist",
       duration: "Oktober 2026 - Sekarang",
       client: "PT. Jawara Tiga Sekawan",
     },
     problemStatement:
       "Platform web korporat sebelumnya mengalami arsitektur visual usang, waktu muat lambat, dan kompromi keamanan backend serius: skrip otomatis berbahaya menyuntikkan spam SEO tersembunyi dan pengalihan captcha palsu, merusak pengindeksan Google Search serta kredibilitas perusahaan.",
     solution:
-      "Mengeksekusi audit keamanan menyeluruh dan perombakan visual: membersihkan file malware serta skrip backdoor tersembunyi, meningkatkan lingkungan server ke PHP 8.5, membangun kembali frontend dengan desain korporat editorial dan narasi visual parallax, serta mendaftarkan peta situs bersih untuk re-indeks Google Search Console.",
+      "Mengeksekusi audit keamanan menyeluruh dan redesain antarmuka: membersihkan file malware serta skrip backdoor dari direktori WordPress, memperbarui konfigurasi keamanan server dan PHP, merancang ulang halaman dengan Elementor agar responsif, serta mendaftarkan peta situs bersih untuk re-indeks Google Search Console.",
     technicalArchitecture:
-      "Runtime PHP 8.5 yang dioptimalkan dengan pembatasan akses tingkat server dan pencegahan eksekusi direktori upload. Arsitektur frontend semantik HTML5/CSS3 dengan gulir parallax responsif tanpa framework berlebih. Dilengkapi pemantauan integritas file dan schema markup SEO teknis.",
+      "Penguatan WordPress di lingkungan Linux/Apache dengan pemblokiran eksekusi skrip ilegal di direktori upload (.htaccess). Pengoptimalan pemuatan aset Elementor dan pendaftaran sitemap Google Search Console.",
     sections: [
       {
         heading: "01. Audit Keamanan & Remediasi Malware SEO",
@@ -408,21 +406,21 @@ export const projectsDataId: Project[] = [
         ],
       },
       {
-        heading: "02. Desain Editorial & Arsitektur Parallax",
+        heading: "02. Redesain Visual dengan Elementor",
         content:
-          "Setelah backend diamankan, antarmuka pengguna dirancang ulang dengan estetika korporat modern dan presisi tinggi. Tata letak baru menyeimbangkan hierarki tipografi bersih, citra kontras tinggi, dan narasi gulir parallax yang mulus untuk mengomunikasikan kredibilitas bisnis kepada calon mitra B2B.",
+          "Setelah backend diamankan, antarmuka pengguna dirancang ulang menggunakan WordPress dan Elementor dengan estetika korporat yang bersih dan kontras tinggi untuk mengomunikasikan kredibilitas bisnis kepada calon mitra B2B.",
         bulletPoints: [
           "Membangun grid responsif dengan ruang kosong terencana dan tata letak bagian yang rapi.",
-          "Merekayasa gerak parallax ringan berakselerasi GPU untuk kedalaman visual yang lancar.",
-          "Mengoptimalkan aset grafis resolusi tinggi demi mempertahankan waktu pemuatan cepat di bawah satu detik."
+          "Menyesuaikan template Elementor agar cepat dimuat dan ramah perangkat seluler.",
+          "Mengoptimalkan aset grafis resolusi tinggi demi mempertahankan waktu pemuatan yang responsif."
         ],
       },
       {
-        heading: "03. Migrasi Runtime PHP 8.5 & Penyetelan Performa",
+        heading: "03. Penguatan Server & Perlindungan Berkelanjutan",
         content:
-          "Memperbarui skrip eksekusi server lama ke PHP 8.5, membuka peningkatan performa kompilasi JIT dan efisiensi engine. Waktu respons server dan utilisasi sumber daya meningkat secara signifikan pada kunjungan bersamaan.",
+          "Mengonfigurasi header keamanan tingkat server, isolasi prefix basis data, serta menonaktifkan fitur edit file sensitif langsung dari dashboard WordPress guna mencegah kompromi berulang.",
         bulletPoints: [
-          "Memigrasikan fungsi lawas ke standar sintaks ketat PHP 8.5.",
+          "Menonaktifkan eksekusi skrip di folder wp-content/uploads melalui direktif server.",
           "Mengonfigurasi caching server dan minifikasi aset untuk latensi minimal.",
           "Memperkuat header keamanan HTTP, Content Security Policy, dan enkripsi SSL/TLS."
         ],
@@ -430,9 +428,9 @@ export const projectsDataId: Project[] = [
       {
         heading: "04. Dampak Terukur & Pemeliharaan Berkelanjutan",
         content:
-          "Kombinasi penguatan keamanan sistem dan rekayasa web modern berhasil memulihkan jejak digital perusahaan sepenuhnya. Website kini menyajikan pengalaman pengguna yang aman, cepat, dan memiliki visibilitas pencarian yang pulih seutuhnya.",
+          "Kombinasi penguatan keamanan sistem dan pembaruan desain berhasil memulihkan jejak digital perusahaan sepenuhnya dengan visibilitas pencarian yang bersih.",
         bulletPoints: [
-          "100% bebas dari bendera spam SEO dan sukses terindeks bersih di mesin pencari.",
+          "Pembersihan tuntas bendera spam SEO dan pemulihan pengindeksan bersih di Google Search Console.",
           "Meningkatkan prestise brand dan kepercayaan mitra bisnis dengan presentasi visual modern.",
           "Menetapkan protokol pemindaian integritas berkala untuk kepatuhan keamanan berkelanjutan."
         ],
@@ -561,9 +559,7 @@ export const projectsDataId: Project[] = [
     ],
     featured: true,
     status: "Selesai & Diterapkan",
-    links: {
-      github: "https://github.com/Yasin30303",
-    },
+    links: {},
     metadata: {
       role: "Full-Stack Developer",
       duration: "4 Bulan",
@@ -681,7 +677,7 @@ export const projectsDataId: Project[] = [
         content:
           "Citra kata masukan diproses melalui konversi grayscale, penyaringan derau, dan normalisasi rasio aspek. Ekstraktor konvolusional 7-layer dengan Max-Pooling memampatkan dimensi tinggi sembari menjaga resolusi horizontal, menghasilkan vektor fitur yang selaras dengan arah membaca teks.",
         bulletPoints: [
-          "Padding bilinear ke dimensi tetap (32 x 128) yang mempertahankan topologi goresan huruf.",
+          "Resize menjaga rasio aspek dengan interpolasi bilinear dan zero-padding ke dimensi 32 x 128.",
           "Batch Normalization dan aktivasi Leaky ReLU untuk mempercepat konvergensi dan mencegah vanishing gradients.",
           "Transposisi irisan fitur dari representasi (C, H, W) ke sekuens temporal (W, C*H)."
         ],
@@ -699,11 +695,11 @@ export const projectsDataId: Project[] = [
       {
         heading: "04. Evaluasi Eksperimental & Temuan Riset",
         content:
-          "Model divalidasi secara ketat menggunakan metrik Character Error Rate (CER) dan Word Error Rate (WER) pada berbagai pembagian data uji. Riset menegaskan pentingnya konsistensi ketebalan goresan dan normalisasi kontras dalam meraih transkripsi akurat.",
+          "Model dievaluasi menggunakan metrik Character Error Rate (CER) dan Word Error Rate (WER) pada data uji independen dari 2.500+ citra kata tulisan tangan ragam penulis (70% train / 15% val / 15% test).",
         bulletPoints: [
-          "Menunjukkan tingkat akurasi tinggi pada sampel tulisan tangan cetak maupun bersambung.",
-          "Mengidentifikasi kegagalan utama pada kemiringan ekstrem dan kontras tinta yang memudar.",
-          "Membuktikan bahwa arsitektur end-to-end CTC mengungguli pipeline berbasis segmentasi parsial secara signifikan."
+          "Meraih Character Error Rate (CER) 12,4% dan Word Error Rate (WER) 24,8% pada tulisan bersambung dan cetak campuran.",
+          "Loss CTC mengeliminasi kebutuhan anotasi bounding box huruf, melatih model langsung pada string sekuensial teks.",
+          "Mengidentifikasi kendala utama terutama pada kemiringan goresan ekstrem (>35°) dan kontras tinta rendah."
         ],
       },
     ],
@@ -717,7 +713,7 @@ export const projectsDataId: Project[] = [
     challengesAndLessons: [
       "Isu vanishing gradient pada perambatan mundur sekuens panjang diselesaikan melalui inisialisasi bobot BiLSTM yang tepat dan normalisasi batch.",
       "Rasio aspek kata yang sangat bervariasi membutuhkan strategi padding yang cermat agar proporsi morfologi goresan huruf tidak terdistorsi.",
-      "Penilaian objektif: akurasi menurun pada pemindaian kamera resolusi rendah, menandai pra-pemrosesan super-resolution sebagai arah riset berharga di masa mendatang."
+      "Akurasi model menurun pada pemindaian kamera resolusi rendah, menandai pra-pemrosesan thresholding adaptif sebagai perbaikan penting di masa depan."
     ],
   },
 ];

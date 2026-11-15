@@ -113,7 +113,7 @@ export function DesignSystemShowcase() {
                 Deep Indigo Design System
               </h1>
               <p className="text-base sm:text-lg text-foreground-secondary max-w-2xl">
-                Complete design tokens, semantic CSS variables, Geist typography hierarchy,
+                Complete design tokens, semantic CSS variables, Geist &amp; Commit Mono typography hierarchy,
                 responsive container bounds, and reusable component primitives.
               </p>
             </div>
@@ -185,7 +185,7 @@ export function DesignSystemShowcase() {
             </div>
             <div className="flex items-center gap-2 text-foreground-secondary">
               <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-              <span>Geist Sans &amp; Mono</span>
+              <span>Geist Sans &amp; Commit Mono</span>
             </div>
             <div className="flex items-center gap-2 text-foreground-secondary">
               <CheckCircle2 className="w-4 h-4 text-emerald-400" />
@@ -245,7 +245,7 @@ export function DesignSystemShowcase() {
           <SectionHeading
             index="02 //"
             eyebrow="TYPOGRAPHY SYSTEM"
-            title="Geist Sans &amp; Geist Mono Hierarchy"
+            title="Geist Sans &amp; Commit Mono Hierarchy"
             description="Responsive type scaling using fluid clamp values, geometric hierarchy, and tabular monospace metadata."
           />
 
@@ -286,7 +286,7 @@ export function DesignSystemShowcase() {
 
             {/* Monospace Metadata */}
             <div className="space-y-2">
-              <div className="font-mono text-xs text-muted">MONOSPACE METADATA // GEIST MONO 12px - 14px</div>
+              <div className="font-mono text-xs text-muted">MONOSPACE METADATA // COMMIT MONO 12px - 14px</div>
               <div className="p-4 rounded-xl border border-border bg-surface/80 font-mono text-xs sm:text-sm text-accent space-y-1">
                 <div>const MODEL_PIPELINE = &quot;CNN-BiLSTM-CTC&quot;;</div>
                 <div>const STACK = [&quot;Next.js 16&quot;, &quot;TypeScript&quot;, &quot;Tailwind v4&quot;, &quot;PyTorch&quot;];</div>

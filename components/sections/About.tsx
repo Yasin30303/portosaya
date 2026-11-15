@@ -6,7 +6,6 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { useLanguage } from "@/components/providers/LanguageProvider";
 import { getProfileData } from "@/data/profile";
-import { Terminal, Cpu, Layers, ShieldCheck } from "lucide-react";
 
 export function About() {
   const { language, t } = useLanguage();
@@ -14,55 +13,47 @@ export function About() {
 
   const pillarsEn = [
     {
-      icon: <Terminal className="w-5 h-5 text-accent-text" />,
       title: "Full-Stack Web Engineering",
       description:
-        "Building production web applications with Next.js App Router, TypeScript, and relational databases. Prioritizing strict typing, atomic transactions, and accessible UI.",
+        "High-reliability production web apps with Next.js, TypeScript, and relational databases.",
     },
     {
-      icon: <Cpu className="w-5 h-5 text-accent-text" />,
       title: "AI & Computer Vision",
       description:
-        "Developing end-to-end deep learning pipelines in PyTorch. Experienced in sequential modeling (CNN-BiLSTM-CTC) for offline handwriting transcription.",
+        "End-to-end deep learning pipelines in PyTorch and sequential image-based models.",
     },
     {
-      icon: <Layers className="w-5 h-5 text-accent-text" />,
       title: "Decision Support Systems",
       description:
-        "Translating complex multi-criteria operational dilemmas into deterministic algorithms (SMART & SAW) for automated scheduling and inventory prioritization.",
+        "Deterministic algorithms (SMART & SAW) for automated scheduling and stock prioritization.",
     },
     {
-      icon: <ShieldCheck className="w-5 h-5 text-accent-text" />,
       title: "Security & Hardening",
       description:
-        "Practicing defensive web engineering: server core maintenance, malicious SEO injection remediation, and performance optimization for high-availability production.",
+        "Server core maintenance, SEO malware remediation, and production runtime hardening.",
     },
   ];
 
   const pillarsId = [
     {
-      icon: <Terminal className="w-5 h-5 text-accent-text" />,
       title: "Rekayasa Web Full-Stack",
       description:
-        "Membangun aplikasi web produksi dengan Next.js App Router, TypeScript, dan database relasional. Memprioritaskan pengetikan tipe ketat, transaksi atomik, dan UI aksesibel.",
+        "Aplikasi web produksi berkeandalan tinggi dengan Next.js, TypeScript, dan basis data relasional.",
     },
     {
-      icon: <Cpu className="w-5 h-5 text-accent-text" />,
       title: "AI & Computer Vision",
       description:
-        "Mengembangkan pipeline deep learning end-to-end dengan PyTorch. Berpengalaman dalam pemodelan sekuensial (CNN-BiLSTM-CTC) untuk transkripsi tulisan tangan offline.",
+        "Pipeline deep learning end-to-end dengan PyTorch dan pemodelan sekuensial berbasis citra.",
     },
     {
-      icon: <Layers className="w-5 h-5 text-accent-text" />,
       title: "Sistem Pendukung Keputusan",
       description:
-        "Menerjemahkan dilema operasional multikriteria menjadi algoritma deterministik (SMART & SAW) untuk otomatisasi jadwal dan prioritas stok.",
+        "Algoritma deterministik (SMART & SAW) untuk otomatisasi penjadwalan dan prioritas stok.",
     },
     {
-      icon: <ShieldCheck className="w-5 h-5 text-accent-text" />,
       title: "Keamanan & Penguatan Server",
       description:
-        "Menerapkan rekayasa web defensif: pemeliharaan berkala core server, pembersihan injeksi malware SEO, dan optimasi performa untuk produksi berkeandalan tinggi.",
+        "Pemeliharaan core server, mitigasi injeksi malware SEO, dan penguatan performa produksi.",
     },
   ];
 
@@ -80,32 +71,39 @@ export function About() {
           />
         </FadeIn>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          {/* Narrative Story (Editorial Column) */}
-          <FadeIn delay={0.1} className="lg:col-span-7 space-y-6 text-foreground-secondary leading-relaxed text-base sm:text-lg">
-            {profile.fullBio.map((paragraph, index) => (
-              <p key={index} className="first:text-foreground first:font-medium">
-                {paragraph}
-              </p>
-            ))}
+        <div className="space-y-10 md:space-y-12">
+          {/* Narrative Story (Editorial Bio Columns) */}
+          <FadeIn delay={0.1}>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 text-foreground-secondary leading-relaxed text-base sm:text-lg">
+              <div className="space-y-4 sm:space-y-5">
+                <p className="text-foreground font-semibold text-lg sm:text-xl leading-relaxed">
+                  {profile.fullBio[0]}
+                </p>
+                <p>{profile.fullBio[1]}</p>
+              </div>
+              <div className="space-y-4 sm:space-y-5">
+                <p>{profile.fullBio[2]}</p>
+                <p>{profile.fullBio[3]}</p>
+              </div>
+            </div>
           </FadeIn>
 
-          {/* Pillars Column */}
-          <div className="lg:col-span-5 grid grid-cols-1 gap-4">
+          {/* 4 Pillars Strip - Horizontal, No Icons, Concise Editorial */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-2">
             {pillars.map((pillar, pIdx) => (
-              <FadeIn key={pillar.title} delay={0.1 + pIdx * 0.08}>
-                <div className="p-5 rounded-xl border border-border/80 bg-surface/60 hover:bg-surface hover:border-accent/30 transition-all duration-200 space-y-2.5">
-                  <div className="flex items-center gap-3">
-                    <div className="p-2 rounded-lg bg-surface border border-border">
-                      {pillar.icon}
-                    </div>
-                    <h3 className="text-base font-bold text-foreground">
+              <FadeIn key={pillar.title} delay={0.15 + pIdx * 0.05}>
+                <div className="h-full p-5 rounded-xl border border-border/80 bg-surface/80 hover:bg-surface hover:border-accent/40 transition-all duration-200 flex flex-col justify-between group">
+                  <div className="space-y-2">
+                    <span className="font-mono text-xs text-accent font-medium">
+                      {`0${pIdx + 1} //`}
+                    </span>
+                    <h3 className="text-sm font-bold text-foreground tracking-tight">
                       {pillar.title}
                     </h3>
+                    <p className="text-xs text-foreground-secondary leading-relaxed">
+                      {pillar.description}
+                    </p>
                   </div>
-                  <p className="text-sm text-foreground-secondary leading-relaxed pl-1">
-                    {pillar.description}
-                  </p>
                 </div>
               </FadeIn>
             ))}

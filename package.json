@@ -9,6 +9,8 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@fontsource/commit-mono": "^5.3.0",
+    "@proj-airi/font-departure-mono": "^0.17.0",
     "clsx": "^2.1.1",
     "lucide-react": "^1.72.0",
     "motion": "^14.14.0",

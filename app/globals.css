@@ -459,10 +459,15 @@ html:not(.dark) .cmiygl-backdrop {
   body {
     background-color: var(--background);
     color: var(--foreground);
-    font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+    font-family: var(--font-commit-mono), 'Commit Mono', ui-monospace, monospace;
     overflow-x: hidden;
     min-height: 100vh;
     transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  h1, h2, h3, .font-heading, .font-display {
+    font-family: var(--font-departure-mono), 'Departure Mono', monospace;
+    letter-spacing: -0.01em;
   }
 
   ::selection {
@@ -491,6 +496,8 @@ html:not(.dark) .cmiygl-backdrop {
   --color-border: var(--border);
   --color-focus-ring: var(--focus-ring);
 
-  --font-sans: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
-  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --font-display: var(--font-departure-mono), 'Departure Mono', monospace;
+  --font-heading: var(--font-departure-mono), 'Departure Mono', monospace;
+  --font-sans: var(--font-commit-mono), 'Commit Mono', ui-monospace, monospace;
+  --font-mono: var(--font-commit-mono), 'Commit Mono', ui-monospace, monospace;
 }

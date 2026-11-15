@@ -29,6 +29,8 @@ export function FeaturedProject({ project, reverse = false }: FeaturedProjectPro
         <div className={`lg:col-span-7 ${reverse ? "lg:order-2" : "lg:order-1"}`}>
           <Link
             href={`/projects/${project.slug}`}
+            tabIndex={-1}
+            aria-hidden="true"
             className="block relative aspect-[16/10] w-full rounded-xl overflow-hidden border border-border/80 bg-surface group-hover:border-accent/40 transition-all duration-300 shadow-md"
           >
             <Image

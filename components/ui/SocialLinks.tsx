@@ -15,7 +15,7 @@ interface SocialLinksProps {
 export function SocialLinks({
   github = "https://github.com/Yasin30303",
   email = "ynuaina@gmail.com",
-  linkedin,
+  linkedin = "https://linkedin.com/in/muhammad-nuaina-yasin",
   cv = "/documents/cv.pdf",
   className,
   iconSize = "md",

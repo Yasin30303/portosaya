@@ -25,7 +25,9 @@ export function NeverEnoughBackground() {
             <div className="relative w-full h-full">
               <Image
                 src="/images/never-enough.jpg"
-                alt="Daniel Caesar Never Enough Artwork"
+                alt=""
+                aria-hidden="true"
+                sizes="100vw"
                 fill
                 priority
                 className="object-cover object-top filter contrast-[1.25] saturate-[1.3] brightness-[0.95]"
@@ -58,7 +60,9 @@ export function NeverEnoughBackground() {
             <div className="relative w-full h-full">
               <Image
                 src="/images/cmiygl-scenery.webp"
-                alt="Call Me If You Get Lost Scenery Atmosphere"
+                alt=""
+                aria-hidden="true"
+                sizes="100vw"
                 fill
                 priority
                 className="object-cover object-top filter contrast-[1.06] saturate-[1.12]"

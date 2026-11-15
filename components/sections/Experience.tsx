@@ -7,25 +7,10 @@ import { TechTag } from "@/components/ui/TechTag";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { getExperienceData } from "@/data/experience";
 import { useLanguage } from "@/components/providers/LanguageProvider";
-import { Briefcase, GraduationCap, Award } from "lucide-react";
 
 export function Experience() {
   const { language, t } = useLanguage();
   const experienceData = getExperienceData(language);
-
-  const getIcon = (type: string) => {
-    switch (type) {
-      case "employment":
-      case "internship":
-        return <Briefcase className="w-4 h-4 text-accent-text" />;
-      case "education":
-        return <GraduationCap className="w-4 h-4 text-accent-text" />;
-      case "certification":
-        return <Award className="w-4 h-4 text-accent-text" />;
-      default:
-        return <Briefcase className="w-4 h-4 text-accent-text" />;
-    }
-  };
 
   return (
     <section id="experience" className="py-12 md:py-16 scroll-mt-20">
@@ -43,9 +28,9 @@ export function Experience() {
           {experienceData.map((item, idx) => (
             <FadeIn key={`${item.organization}-${idx}`} delay={idx * 0.08}>
               <div className="relative group">
-                {/* Timeline Indicator Node */}
-                <div className="absolute -left-[31px] sm:-left-[47px] top-1.5 flex items-center justify-center w-7 h-7 rounded-lg border border-border bg-surface text-accent-text group-hover:border-accent group-hover:scale-105 transition-all">
-                  {getIcon(item.type)}
+                {/* Minimal Timeline Indicator Node */}
+                <div className="absolute -left-[31px] sm:-left-[47px] top-3.5 flex items-center justify-center w-6 h-6 rounded-full border border-border/90 bg-surface text-accent group-hover:border-accent group-hover:scale-110 transition-all shadow-xs">
+                  <span className="w-2 h-2 rounded-full bg-accent" />
                 </div>
 
                 {/* Main Content Card */}

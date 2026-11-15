@@ -2,14 +2,13 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, FileText } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { LanguageToggle } from "@/components/ui/LanguageToggle";
 import { MobileMenu } from "@/components/layout/MobileMenu";
 import { useActiveSection } from "@/hooks/useActiveSection";
 import { useLanguage } from "@/components/providers/LanguageProvider";
-import { profileData } from "@/data/profile";
 import { cn } from "@/lib/utils";
 
 const SECTION_IDS = ["hero", "about", "projects", "skills", "experience", "contact"];
@@ -108,16 +107,6 @@ export function Navbar() {
           <div className="ml-auto flex items-center gap-2">
             <LanguageToggle />
             <ThemeToggle />
-
-            <a
-              href={profileData.cvPath}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden lg:inline-flex items-center gap-1.5 text-xs font-medium px-3.5 py-2 min-h-[44px] rounded-lg border border-border/90 bg-surface/90 hover:bg-surface-hover text-foreground hover:border-accent/40 transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring active:scale-95"
-            >
-              <FileText className="w-3.5 h-3.5 text-accent-text" />
-              <span>{t.nav.cv}</span>
-            </a>
 
             {/* Mobile Menu Trigger */}
             <button

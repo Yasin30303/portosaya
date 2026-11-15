@@ -11,6 +11,8 @@ export function ProjectCard({ project }: { project: Project }) {
       {/* Thumbnail */}
       <Link
         href={`/projects/${project.slug}`}
+        tabIndex={-1}
+        aria-hidden="true"
         className="block relative aspect-[16/10] w-full rounded-xl overflow-hidden border border-border/80 bg-surface mb-5"
       >
         <Image

@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { ArrowDown, Mail, MapPin, Terminal } from "lucide-react";
+import { ArrowDown, Mail, MapPin } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 import { Button } from "@/components/ui/Button";
 import { FadeIn } from "@/components/ui/FadeIn";
@@ -108,26 +108,6 @@ export function Hero() {
                       <MapPin className="w-3 h-3 text-accent-text" />
                       Bandung, ID
                     </span>
-                  </div>
-                </div>
-
-                {/* Technical Meta Card with Badges/Pills */}
-                <div className="mt-2.5 p-3 rounded-xl bg-surface/80 border border-border/70 space-y-2">
-                  <div className="flex items-center justify-between text-muted text-[10px] font-mono tracking-wider uppercase font-semibold">
-                    <span className="flex items-center gap-1.5">
-                      <Terminal className="w-3 h-3 text-accent-text" />
-                      {t.hero.technicalFocus}
-                    </span>
-                  </div>
-                  <div className="flex flex-wrap gap-1.5">
-                    {t.hero.focusPills?.map((pill) => (
-                      <span
-                        key={pill}
-                        className="px-2.5 py-1 rounded-md text-[11px] font-mono font-medium bg-accent/10 border border-accent/20 text-accent-text"
-                      >
-                        {pill}
-                      </span>
-                    ))}
                   </div>
                 </div>
               </div>

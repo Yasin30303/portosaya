@@ -7,7 +7,7 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/private/",
     },
-    sitemap: "https://muhammad-yasin.dev/sitemap.xml",
+    sitemap: "https://nuainay.vercel.app/sitemap.xml",
   };
 }
 
