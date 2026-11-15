@@ -111,7 +111,7 @@ export const projectsDataEn: Project[] = [
     featured: true,
     status: "Live in Production",
     links: {
-      demo: "https://xenatekno.vercel.app",
+      demo: "https://xenatekn0.vercel.app",
     },
     metadata: {
       role: "Website Developer (Internship)",
@@ -472,7 +472,7 @@ export const projectsDataId: Project[] = [
     featured: true,
     status: "Berjalan di Produksi",
     links: {
-      demo: "https://xenatekno.vercel.app",
+      demo: "https://xenatekn0.vercel.app",
     },
     metadata: {
       role: "Website Developer (Internship)",
