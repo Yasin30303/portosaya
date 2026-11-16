@@ -20,7 +20,7 @@ export function Skills() {
   ];
 
   return (
-    <section id="skills" className="py-12 md:py-16 scroll-mt-20">
+    <section id="skills" className="py-16 md:py-24 scroll-mt-24">
       <Container>
         <FadeIn>
           <SectionHeading

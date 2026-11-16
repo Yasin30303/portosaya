@@ -433,6 +433,7 @@ html:not(.dark) .cmiygl-backdrop {
 
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

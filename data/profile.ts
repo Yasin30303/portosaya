@@ -4,15 +4,13 @@ export const profileDataEn: Profile = {
   name: "Muhammad Nuaina Yasin",
   role: "Full-Stack Developer · Computer Vision",
   eyebrow: "SOFTWARE ENGINEER",
-  tagline: "Architecting ideas building digital solutions through technology.",
-  headline: "Full-Stack Developer & Computer Vision Researcher from Bandung, Indonesia.",
+  tagline: "Engineering full-stack web and deep learning systems.",
+  headline: "Building production web applications and deep learning recognition models.",
   shortBio:
-    "Informatics Engineering graduate from Universitas Komputer Indonesia (UNIKOM) combining full-stack software engineering and deep learning research (offline handwriting recognition) to build reliable, user-focused digital systems.",
+    "Informatics Engineering graduate from UNIKOM Bandung. Building production web systems with Next.js and TypeScript, and training sequential handwriting recognition models in PyTorch.",
   fullBio: [
-    "I am an Informatics Engineering graduate from Universitas Komputer Indonesia (UNIKOM), Bandung. My background combines software engineering fundamentals with applied artificial intelligence research.",
-    "In web engineering, I build production web applications with Next.js, TypeScript, and modern database architectures, emphasizing clean architecture, defensive security, and responsive craft.",
-    "In machine learning and computer vision, I research deep learning architectures, specifically sequential handwriting text recognition using CNN-BiLSTM-CTC models implemented in PyTorch.",
-    "I believe technology should solve tangible operational problems while maintaining high usability, speed, and clean code architecture."
+    "Graduated in Informatics Engineering from UNIKOM Bandung (2026, BNSP Certified Software Developer). My focus bridges transactional full-stack web engineering with applied deep learning research.",
+    "In web engineering, I build production applications using Next.js, TypeScript, and relational databases, with direct experience in server security hardening and malware remediation. In machine learning, I design sequential handwriting text recognition pipelines (CNN-BiLSTM-CTC) trained on custom Indonesian datasets."
   ],
   location: "Kota Bandung, Jawa Barat, Indonesia",
   email: "ynuaina@gmail.com",
@@ -25,10 +23,10 @@ export const profileDataEn: Profile = {
     label: "Open to Junior Full-Stack & ML roles",
   },
   stats: [
-    { label: "Degree", value: "S1 Teknik Informatika" },
-    { label: "Graduation", value: "2026" },
-    { label: "Certification", value: "BNSP Software Eng." },
-    { label: "Location", value: "Bandung, Indonesia" },
+    { label: "Degree", value: "S1 Informatika" },
+    { label: "Status", value: "Graduated 2026" },
+    { label: "Certification", value: "BNSP Certified" },
+    { label: "Core Stack", value: "Next.js · PyTorch" },
   ],
 };
 
@@ -36,15 +34,13 @@ export const profileDataId: Profile = {
   name: "Muhammad Nuaina Yasin",
   role: "Full-Stack Developer · Computer Vision",
   eyebrow: "SOFTWARE ENGINEER",
-  tagline: "Merancang ide membangun solusi digital melalui teknologi.",
-  headline: "Full-Stack Developer & Periset Computer Vision asal Bandung, Indonesia.",
+  tagline: "Rekayasa sistem web full-stack dan model deep learning.",
+  headline: "Membangun aplikasi web produksi dan model pengenalan deep learning.",
   shortBio:
-    "Lulusan S1 Teknik Informatika Universitas Komputer Indonesia (UNIKOM) yang memadukan rekayasa perangkat lunak full-stack dan riset deep learning (pengenalan tulisan tangan) untuk membangun sistem digital yang andal dan berorientasi pengguna.",
+    "Lulusan Teknik Informatika UNIKOM Bandung. Membangun sistem web produksi dengan Next.js dan TypeScript, serta melatih model pengenalan tulisan tangan sekuensial dengan PyTorch.",
   fullBio: [
-    "Saya adalah lulusan S1 Teknik Informatika dari Universitas Komputer Indonesia (UNIKOM), Bandung. Latar belakang saya memadukan fundamental rekayasa perangkat lunak dengan riset kecerdasan buatan terapan.",
-    "Dalam rekayasa web, saya membangun aplikasi full-stack yang andal dengan Next.js, TypeScript, dan arsitektur basis data modern, mengutamakan kebersihan kode, keamanan backend, dan ketelitian antarmuka editorial.",
-    "Di bidang machine learning dan computer vision, saya meneliti arsitektur deep learning, khususnya pengenalan teks tulisan tangan sekuensial menggunakan arsitektur CNN-BiLSTM-CTC berbasis PyTorch.",
-    "Saya meyakini bahwa teknologi harus memecahkan hambatan operasional nyata sembari mempertahankan kemudahan penggunaan, kecepatan, dan arsitektur kode yang terstruktur."
+    "Lulusan S1 Teknik Informatika UNIKOM Bandung (2026, tersertifikasi BNSP). Fokus saya memadukan rekayasa web full-stack transaksional dengan riset deep learning terapan.",
+    "Pada rekayasa web, saya membangun aplikasi produksi dengan Next.js, TypeScript, dan basis data relasional, disertai pengalaman praktis dalam mitigasi keamanan server Linux dan pembersihan malware. Di bidang machine learning, saya merancang pipeline pengenalan tulisan tangan sekuensial (CNN-BiLSTM-CTC) pada dataset aksara Indonesia."
   ],
   location: "Kota Bandung, Jawa Barat, Indonesia",
   email: "ynuaina@gmail.com",
@@ -57,10 +53,10 @@ export const profileDataId: Profile = {
     label: "Terbuka untuk posisi Junior Full-Stack & ML",
   },
   stats: [
-    { label: "Gelar", value: "S1 Teknik Informatika" },
-    { label: "Kelulusan", value: "2026" },
-    { label: "Sertifikasi", value: "BNSP Software Eng." },
-    { label: "Lokasi", value: "Bandung, Indonesia" },
+    { label: "Gelar", value: "S1 Informatika" },
+    { label: "Status", value: "Lulus 2026" },
+    { label: "Sertifikasi", value: "BNSP Terverifikasi" },
+    { label: "Stack Utama", value: "Next.js · PyTorch" },
   ],
 };
 

@@ -44,10 +44,10 @@ export const experienceDataEn: ExperienceItem[] = [
     contributions: [
       "Undergraduate Thesis: 'Pengenalan Citra Kata Tulisan Tangan Menggunakan Arsitektur CNN-BiLSTM' (Sequential Handwritten Word Recognition).",
       "Deep dive into machine learning models, computer vision pipelines, linear algebra, and data structures.",
-      "Graduated in 4 years with demonstrated proficiency in full-stack web and machine learning systems."
+      "Focused on full-stack web architectures, sequential deep learning, and algorithmic problem solving."
     ],
     skills: ["Deep Learning", "PyTorch", "Computer Vision", "Software Engineering", "Algorithms"],
-    status: "Completed in 4 Years",
+    status: "Graduated 2026",
   },
   {
     role: "Certified Software Developer",
@@ -109,10 +109,10 @@ export const experienceDataId: ExperienceItem[] = [
     contributions: [
       "Skripsi: 'Pengenalan Citra Kata Tulisan Tangan Menggunakan Arsitektur CNN-BiLSTM' (Sequential Handwritten Word Recognition).",
       "Mendalami model machine learning, pipeline computer vision, aljabar linier, dan struktur data.",
-      "Lulus tepat waktu 4 tahun dengan kompetensi teruji pada sistem web full-stack dan rekayasa model kecerdasan buatan."
+      "Berfokus pada arsitektur web full-stack, deep learning sekuensial, dan pemecahan masalah algoritmik."
     ],
     skills: ["Deep Learning", "PyTorch", "Computer Vision", "Rekayasa Perangkat Lunak", "Algoritma"],
-    status: "Lulus 4 Tahun",
+    status: "Lulus 2026",
   },
   {
     role: "Certified Software Developer",

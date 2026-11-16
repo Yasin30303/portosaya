@@ -22,7 +22,7 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-12 md:py-16 scroll-mt-20">
+    <section id="contact" className="py-16 md:py-24 scroll-mt-24">
       <Container size="narrow">
         <FadeIn>
           <SectionHeading

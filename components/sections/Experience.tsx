@@ -13,7 +13,7 @@ export function Experience() {
   const experienceData = getExperienceData(language);
 
   return (
-    <section id="experience" className="py-12 md:py-16 scroll-mt-20">
+    <section id="experience" className="py-16 md:py-24 scroll-mt-24">
       <Container>
         <FadeIn>
           <SectionHeading

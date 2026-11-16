@@ -13,54 +13,54 @@ export function About() {
 
   const pillarsEn = [
     {
-      title: "Full-Stack Web Engineering",
+      title: "Full-Stack Web Systems",
       description:
-        "High-reliability production web apps with Next.js, TypeScript, and relational databases.",
+        "Transactional architectures with Next.js, TypeScript, and relational SQL schemas.",
     },
     {
       title: "AI & Computer Vision",
       description:
-        "End-to-end deep learning pipelines in PyTorch and sequential image-based models.",
+        "PyTorch pipelines: CNN-BiLSTM-CTC models for sequential offline text recognition.",
     },
     {
       title: "Decision Support Systems",
       description:
-        "Deterministic algorithms (SMART & SAW) for automated scheduling and stock prioritization.",
+        "Deterministic multi-criteria algorithms (SMART & SAW) for operational optimization.",
     },
     {
       title: "Security & Hardening",
       description:
-        "Server core maintenance, SEO malware remediation, and production runtime hardening.",
+        "Linux server protection, malware decontamination, and technical SEO recovery.",
     },
   ];
 
   const pillarsId = [
     {
-      title: "Rekayasa Web Full-Stack",
+      title: "Sistem Web Full-Stack",
       description:
-        "Aplikasi web produksi berkeandalan tinggi dengan Next.js, TypeScript, dan basis data relasional.",
+        "Arsitektur transaksional dengan Next.js, TypeScript, dan skema SQL relasional.",
     },
     {
       title: "AI & Computer Vision",
       description:
-        "Pipeline deep learning end-to-end dengan PyTorch dan pemodelan sekuensial berbasis citra.",
+        "Pipeline PyTorch: model CNN-BiLSTM-CTC untuk pengenalan teks sekuensial.",
     },
     {
       title: "Sistem Pendukung Keputusan",
       description:
-        "Algoritma deterministik (SMART & SAW) untuk otomatisasi penjadwalan dan prioritas stok.",
+        "Algoritma deterministik multikriteria (SMART & SAW) untuk optimasi operasional.",
     },
     {
       title: "Keamanan & Penguatan Server",
       description:
-        "Pemeliharaan core server, mitigasi injeksi malware SEO, dan penguatan performa produksi.",
+        "Proteksi server Linux, pembersihan malware, dan pemulihan technical SEO.",
     },
   ];
 
   const pillars = language === "id" ? pillarsId : pillarsEn;
 
   return (
-    <section id="about" className="py-12 md:py-16 scroll-mt-20">
+    <section id="about" className="py-16 md:py-24 scroll-mt-24">
       <Container>
         <FadeIn>
           <SectionHeading
@@ -75,15 +75,15 @@ export function About() {
           {/* Narrative Story (Editorial Bio Columns) */}
           <FadeIn delay={0.1}>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 text-foreground-secondary leading-relaxed text-base sm:text-lg">
-              <div className="space-y-4 sm:space-y-5">
+              <div className="space-y-4">
                 <p className="text-foreground font-semibold text-lg sm:text-xl leading-relaxed">
                   {profile.fullBio[0]}
                 </p>
-                <p>{profile.fullBio[1]}</p>
               </div>
-              <div className="space-y-4 sm:space-y-5">
-                <p>{profile.fullBio[2]}</p>
-                <p>{profile.fullBio[3]}</p>
+              <div className="space-y-4">
+                <p className="text-foreground-secondary text-base sm:text-lg leading-relaxed">
+                  {profile.fullBio[1]}
+                </p>
               </div>
             </div>
           </FadeIn>

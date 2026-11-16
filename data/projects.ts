@@ -9,7 +9,7 @@ export const projectsDataEn: Project[] = [
     description:
       "WordPress & Elementor corporate redesign, server security hardening, and SEO malware decontamination for PT. Jawara Tiga Sekawan.",
     overview:
-      "Handled the redesign and security rehabilitation of the official corporate website for PT. Jawara Tiga Sekawan. Rebuilt the frontend using WordPress and Elementor for a clean, modern aesthetic while executing critical incident response to eliminate obfuscated SEO spam injections and restore healthy search indexing.",
+      "Corporate website redesign using WordPress and Elementor, combined with malware incident response to purge obfuscated SEO spam injections and restore clean Google Search indexing.",
     coverImage: "/images/projects/jawaratigasekawan.png",
     technologies: [
       "WordPress",
@@ -98,7 +98,7 @@ export const projectsDataEn: Project[] = [
     description:
       "A responsive, modern company profile website engineered for an IT solutions firm to showcase software services and digital capabilities.",
     overview:
-      "Developed the official digital presence for CV. XENA TEKNO, an information technology consulting and solutions company. Created an accessible, responsive website architecture showcasing enterprise software development services, project workflows, and team competencies to prospective clients.",
+      "Responsive company profile for an IT solutions consultancy, presenting enterprise services, project workflows, and team competencies with edge-deployed performance.",
     coverImage: "/images/projects/xenatekno.png",
     technologies: [
       "React",
@@ -187,7 +187,7 @@ export const projectsDataEn: Project[] = [
     description:
       "A web-based inventory, production scheduling, and cashier application with multi-criteria decision support algorithms (SMART & SAW) for operational optimization.",
     overview:
-      "Engineered to resolve real-world scheduling bottlenecks and inventory tracking issues in local production business. Combines a transactional point-of-sale and stock management system with automated multi-criteria decision algorithms to prioritize production orders by deadline and machine capacity.",
+      "Transactional POS and stock management system with deterministic multi-criteria algorithms (SMART & SAW) to automate production order scheduling and inventory prioritization.",
     coverImage: "/images/projects/inventory-dss.png",
     technologies: [
       "Next.js",
@@ -275,7 +275,7 @@ export const projectsDataEn: Project[] = [
     description:
       "An end-to-end deep learning system for recognizing offline handwritten Indonesian words using a sequential CNN-BiLSTM-CTC architecture in PyTorch.",
     overview:
-      "Undergraduate research focused on offline handwritten text recognition (HTR). Developed a hybrid deep learning model combining Convolutional Neural Networks for 2D spatial feature extraction, Bidirectional LSTMs for sequential temporal character modeling, and Connectionist Temporal Classification (CTC) for unsegmented sequence decoding.",
+      "Offline handwritten word recognition using a sequential CNN-BiLSTM-CTC architecture in PyTorch. Achieved 12.4% CER and 24.8% WER on 2,500+ curated word images without character pre-segmentation.",
     coverImage: "/images/projects/ocr-hero.svg",
     technologies: [
       "Python",
@@ -368,7 +368,7 @@ export const projectsDataId: Project[] = [
     description:
       "Redesain website korporat dengan WordPress & Elementor, penguatan keamanan server, dan pembersihan injeksi malware SEO untuk PT. Jawara Tiga Sekawan.",
     overview:
-      "Menangani perancangan ulang dan pemulihan keamanan situs web resmi PT. Jawara Tiga Sekawan. Membangun kembali frontend menggunakan WordPress dan Elementor agar tampil profesional dan modern, sembari mengeksekusi tindakan tanggap insiden untuk membersihkan injeksi malware spam SEO dan memulihkan reputasi domain di Google Search Console.",
+      "Redesain website korporat dengan WordPress dan Elementor, disertai tindakan tanggap insiden untuk membersihkan injeksi malware SEO dan memulihkan reputasi indeks Google Search.",
     coverImage: "/images/projects/jawaratigasekawan.png",
     technologies: [
       "WordPress",
@@ -457,7 +457,7 @@ export const projectsDataId: Project[] = [
     description:
       "Website profil perusahaan modern dan responsif yang dibangun untuk konsultan solusi IT guna menampilkan layanan perangkat lunak dan kapabilitas digital.",
     overview:
-      "Mengembangkan kehadiran digital resmi untuk CV. XENA TEKNO, penyedia konsultasi dan solusi teknologi informasi. Membangun arsitektur website yang aksesibel dan responsif untuk menampilkan layanan rekayasa software korporat, alur kerja proyek, dan kompetensi tim kepada calon klien.",
+      "Website profil perusahaan responsif untuk konsultan solusi IT, menyajikan katalog layanan software, alur proyek, dan kompetensi tim dengan performa edge deployment.",
     coverImage: "/images/projects/xenatekno.png",
     technologies: [
       "React",
@@ -546,7 +546,7 @@ export const projectsDataId: Project[] = [
     description:
       "Aplikasi inventaris, penjadwalan produksi, dan kasir berbasis web dengan algoritma pendukung keputusan multikriteria (SMART & SAW) untuk optimasi operasional.",
     overview:
-      "Direkayasa untuk mengatasi kendala antrean penjadwalan dan pelacakan stok pada bisnis manufaktur lokal. Memadukan kasir point-of-sale dan manajemen inventaris dengan algoritma pembobotan otomatis untuk memprioritaskan pesanan produksi berdasarkan tenggat waktu dan kapasitas mesin.",
+      "Sistem kasir dan inventaris transaksional yang terintegrasi dengan algoritma multikriteria (SMART & SAW) untuk otomatisasi jadwal produksi dan prioritas stok.",
     coverImage: "/images/projects/inventory-dss.png",
     technologies: [
       "Next.js",
@@ -634,7 +634,7 @@ export const projectsDataId: Project[] = [
     description:
       "Sistem deep learning end-to-end untuk mengenali kata tulisan tangan bahasa Indonesia offline menggunakan arsitektur sekuensial CNN-BiLSTM-CTC berbasis PyTorch.",
     overview:
-      "Penelitian sarjana yang berfokus pada pengenalan teks tulisan tangan offline (HTR). Mengembangkan model deep learning hibrida yang memadukan Convolutional Neural Networks untuk ekstraksi fitur spasial 2D, Bidirectional LSTM untuk pemodelan sekuensial temporal, dan Connectionist Temporal Classification (CTC) untuk decoding sekuens tanpa segmentasi karakter eksplisit.",
+      "Pengenalan kata tulisan tangan offline menggunakan arsitektur sekuensial CNN-BiLSTM-CTC di PyTorch. Meraih 12.4% CER dan 24.8% WER pada 2.500+ citra kata tanpa segmentasi karakter manual.",
     coverImage: "/images/projects/ocr-hero.svg",
     technologies: [
       "Python",
