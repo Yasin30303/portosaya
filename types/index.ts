@@ -17,10 +17,14 @@ export interface ProjectGalleryItem {
 export interface Project {
   slug: string;
   title: string;
+  subtitle?: string;
+  tagline?: string;
   category: string;
   categoryLabel: string;
+  period?: string;
   description: string;
   overview: string;
+  highlights?: string[];
   coverImage: string;
   technologies: string[];
   featured: boolean;
@@ -28,6 +32,7 @@ export interface Project {
   links?: {
     demo?: string;
     github?: string;
+    caseStudy?: string;
   };
   metadata: {
     role: string;
@@ -59,7 +64,7 @@ export interface ExperienceItem {
   organization: string;
   location: string;
   period: string;
-  type: "employment" | "internship" | "education" | "certification";
+  type: "employment" | "contract" | "internship" | "education" | "certification";
   description: string;
   contributions: string[];
   skills?: string[];

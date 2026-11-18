@@ -37,6 +37,12 @@ export function ProjectHeader({ project }: { project: Project }) {
           {project.title}
         </h1>
 
+        {project.subtitle && (
+          <p className="font-mono text-sm sm:text-base text-accent-text font-medium">
+            {project.subtitle}
+          </p>
+        )}
+
         <p className="text-lg sm:text-xl text-foreground-secondary leading-relaxed max-w-3xl">
           {project.overview}
         </p>

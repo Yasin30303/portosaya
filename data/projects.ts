@@ -3,21 +3,28 @@ import { Project, Language } from "@/types";
 export const projectsDataEn: Project[] = [
   {
     slug: "jawara-tiga-sekawan",
-    title: "PT. Jawara Tiga Sekawan: Corporate Web & Security Hardening",
-    category: "Web Development & Security",
-    categoryLabel: "WORDPRESS / MALWARE REMEDIATION & HARDENING",
+    title: "B2B Web Platform & Technical SEO",
+    subtitle: "Jawara Tiga Sekawan",
+    tagline: "Custom high-performance B2B web platform engineered for search engine visibility.",
+    category: "Web Development",
+    categoryLabel: "B2B PLATFORM / TECHNICAL SEO",
+    period: "Oct 2026",
     description:
-      "WordPress & Elementor corporate redesign, server security hardening, and SEO malware decontamination for PT. Jawara Tiga Sekawan.",
+      "Designed and developed a bespoke B2B website combining WordPress content management with Tailwind CSS styling, Schema.org structured data, and Google Search Console integration.",
     overview:
-      "Corporate website redesign using WordPress and Elementor, combined with malware incident response to purge obfuscated SEO spam injections and restore clean Google Search indexing.",
+      "Designed and developed a bespoke B2B website from the ground up, combining WordPress content management flexibility with Tailwind CSS styling efficiency. Beyond responsive UI implementation, managed full domain infrastructure configuration, Schema.org structured data markup, and Google Search Console integration to maximize organic search indexing and B2B lead discoverability.",
+    highlights: [
+      "Developed a custom WordPress theme styled with Tailwind CSS for fast load times and easy content management.",
+      "Implemented Schema.org structured data markup to enhance rich search engine results.",
+      "Configured domain DNS management and Google Search Console indexing pipelines.",
+    ],
     coverImage: "/images/projects/jawaratigasekawan.png",
     technologies: [
       "WordPress",
-      "Elementor",
-      "PHP",
-      "Linux Server Hardening",
-      "Malware Remediation",
-      "Technical SEO"
+      "Tailwind CSS",
+      "Schema.org",
+      "Google Search Console",
+      "Technical SEO",
     ],
     featured: true,
     status: "Live in Production",
@@ -25,7 +32,7 @@ export const projectsDataEn: Project[] = [
       demo: "https://jawaratigasekawan.com",
     },
     metadata: {
-      role: "WordPress Developer & Security Specialist",
+      role: "WordPress Developer & Technical SEO Specialist",
       duration: "Oktober 2026 - Present",
       client: "PT. Jawara Tiga Sekawan",
     },
@@ -92,21 +99,25 @@ export const projectsDataEn: Project[] = [
   },
   {
     slug: "xena-tekno",
-    title: "CV. XENA TEKNO: IT Solution Company Profile",
-    category: "Frontend & Web Development",
-    categoryLabel: "COMPANY PROFILE / FRONTEND ARCHITECTURE",
+    title: "Corporate Company Profile Website",
+    subtitle: "CV Xena Tekno Bandung",
+    tagline: "Modern digital identity and service catalog tailored for B2B and B2C client acquisition.",
+    category: "Web Development",
+    categoryLabel: "COMPANY PROFILE / FRONTEND",
+    period: "Aug 2025 – Feb 2026",
     description:
-      "A responsive, modern company profile website engineered for an IT solutions firm to showcase software services and digital capabilities.",
+      "Architected and developed a corporate profile website with clear information hierarchy to showcase CV Xena Tekno Bandung's technical capabilities, service offerings, and business credibility.",
     overview:
-      "Responsive company profile for an IT solutions consultancy, presenting enterprise services, project workflows, and team competencies with edge-deployed performance.",
+      "Architected and developed a corporate profile website with clear information hierarchy to showcase CV Xena Tekno Bandung's technical capabilities, service offerings, and business credibility. Focused on intuitive navigation, fast load times, and seamless responsiveness across desktop and mobile devices.",
+    highlights: [
+      "Structured corporate service catalogs and technical capability pages for clear client communication.",
+      "Delivered a mobile-first, responsive UI/UX optimized for cross-device compatibility.",
+    ],
     coverImage: "/images/projects/xenatekno.png",
     technologies: [
-      "React",
-      "Next.js / Vercel",
-      "Tailwind CSS",
-      "Responsive Layouts",
-      "Information Architecture",
-      "Accessible Navigation"
+      "Responsive Web Design",
+      "UI/UX Implementation",
+      "Frontend Web",
     ],
     featured: true,
     status: "Live in Production",
@@ -115,8 +126,8 @@ export const projectsDataEn: Project[] = [
     },
     metadata: {
       role: "Website Developer (Internship)",
-      duration: "Agustus 2025 - Oktober 2025",
-      client: "CV. XENA TEKNO",
+      duration: "Aug 2025 – Feb 2026",
+      client: "CV Xena Tekno Bandung",
     },
     problemStatement:
       "As a growing technology solutions provider, CV. XENA TEKNO needed an authoritative digital platform that clearly communicated their technical services, demonstrated software competency, and streamlined client project inquiries.",
@@ -181,37 +192,43 @@ export const projectsDataEn: Project[] = [
   },
   {
     slug: "inventory-cashier-dss",
-    title: "Inventory & Cashier Decision Support System",
-    category: "Full-Stack Development",
+    title: "Inventory Decision Support System (DSS)",
+    subtitle: "Toko Nay's Cake",
+    tagline: "Data-driven inventory management web application automating product restock prioritization.",
+    category: "Web Development",
     categoryLabel: "FULL-STACK / DECISION SUPPORT",
+    period: "Jul 2025 – Feb 2026",
     description:
-      "A web-based inventory, production scheduling, and cashier application with multi-criteria decision support algorithms (SMART & SAW) for operational optimization.",
+      "Replaced manual inventory evaluation workflows with an objective multi-criteria scoring engine powered by the Simple Multi-Attribute Rating Technique (SMART).",
     overview:
-      "Transactional POS and stock management system with deterministic multi-criteria algorithms (SMART & SAW) to automate production order scheduling and inventory prioritization.",
-    coverImage: "/images/projects/inventory-dss.png",
+      "Replaced manual inventory evaluation workflows with an objective multi-criteria scoring engine powered by the Simple Multi-Attribute Rating Technique (SMART). Built on a modern full-stack architecture, the application processes product attributes in real time to generate accurate restock priority rankings backed by a cloud relational database.",
+    highlights: [
+      "Implemented the SMART multi-criteria decision analysis algorithm to automate stock prioritization.",
+      "Architected a type-safe full-stack web application using Next.js, TypeScript, and Prisma ORM.",
+      "Integrated serverless PostgreSQL storage via NeonDB for reliable real-time inventory tracking.",
+    ],
+    coverImage: "/images/projects/tampilan_naysmart.png",
     technologies: [
       "Next.js",
       "TypeScript",
       "Tailwind CSS",
       "Prisma ORM",
-      "Supabase",
-      "SMART Algorithm",
-      "SAW Method"
+      "PostgreSQL (NeonDB)",
     ],
     featured: true,
     status: "Completed & Deployed",
     links: {},
     metadata: {
       role: "Full-Stack Developer",
-      duration: "4 Months",
-      client: "CV. Trust Lafalo",
+      duration: "Jul 2025 – Feb 2026",
+      client: "Toko Nay's Cake",
     },
     problemStatement:
       "Small-scale manufacturing businesses and local culinary ventures struggle with manual production scheduling, uncoordinated machine allocation, and stock discrepancies. Without systematic prioritization, high-urgency customer orders frequently experience delays and machine idle times.",
     solution:
       "Developed a modern web application integrating automated order prioritization using the Simple Additive Weighting (SAW) and Simple Multi-Attribute Rating Technique (SMART). The system calculates priority weights based on order volume, customer deadlines, and machine capacity slots, rendering an interactive visual production calendar.",
     technicalArchitecture:
-      "Built with Next.js App Router for server-side rendering, paired with Supabase PostgreSQL for ACID-compliant transactional consistency. Prisma ORM guarantees type safety across database operations. The prioritization engine runs deterministic multi-attribute calculations on the backend prior to schedule slot allocation.",
+      "Built with Next.js App Router for server-side rendering, paired with PostgreSQL (NeonDB) for ACID-compliant transactional consistency. Prisma ORM guarantees type safety across database operations. The prioritization engine runs deterministic multi-attribute calculations on the backend prior to schedule slot allocation.",
     sections: [
       {
         heading: "01. Business Context & Challenge",
@@ -256,9 +273,9 @@ export const projectsDataEn: Project[] = [
     ],
     gallery: [
       {
-        url: "/images/projects/inventory-dss.png",
-        caption: "Automated Production Scheduling & Timeline Calendar View with 100% On-Time Performance Tracking",
-        alt: "Sistem Penjadwalan CV Trust Lafalo Dashboard",
+        url: "/images/projects/tampilan_naysmart.png",
+        caption: "Toko Nay's Cake Inventory Decision Support System Dashboard View",
+        alt: "Toko Nay's Cake SMART Inventory Dashboard",
       },
     ],
     challengesAndLessons: [
@@ -269,22 +286,29 @@ export const projectsDataEn: Project[] = [
   },
   {
     slug: "indonesian-handwriting-ocr",
-    title: "Indonesian Handwriting Text Recognition",
-    category: "AI & Computer Vision",
+    title: "Offline Handwritten Text Recognition (HTR) for Essay Grading",
+    subtitle: "Undergraduate Thesis — UNIKOM",
+    tagline: "End-to-end deep learning OCR pipeline for transcribing Indonesian handwritten essay answers.",
+    category: "Machine Learning & CV",
     categoryLabel: "DEEP LEARNING / COMPUTER VISION",
+    period: "Sep 2026",
     description:
-      "An end-to-end deep learning system for recognizing offline handwritten Indonesian words using a sequential CNN-BiLSTM-CTC architecture in PyTorch.",
+      "Engineered an end-to-end Computer Vision pipeline to detect and transcribe handwritten Indonesian text from scanned essay sheets using a hybrid CNN-BiLSTM-CTC sequence model in PyTorch.",
     overview:
-      "Offline handwritten word recognition using a sequential CNN-BiLSTM-CTC architecture in PyTorch. Achieved 12.4% CER and 24.8% WER on 2,500+ curated word images without character pre-segmentation.",
+      "Engineered an end-to-end Computer Vision pipeline to detect and transcribe handwritten Indonesian text from scanned essay sheets. The workflow encompasses bounding-box dataset annotation (COCO JSON) via Roboflow, image preprocessing with OpenCV, and training a hybrid CNN-BiLSTM-CTC sequence recognition model in PyTorch. Transcription accuracy was rigorously benchmarked using Character Error Rate (CER) and Word Error Rate (WER) via JiWER.",
+    highlights: [
+      "Built a hybrid CNN-BiLSTM-CTC deep learning architecture for sequence-to-sequence text recognition.",
+      "Curated and annotated custom handwriting datasets in COCO JSON format using Roboflow and Hugging Face Datasets.",
+      "Implemented OpenCV image preprocessing pipelines and evaluated model performance with CER/WER metrics via JiWER.",
+    ],
     coverImage: "/images/projects/ocr-hero.svg",
     technologies: [
       "Python",
       "PyTorch",
       "OpenCV",
-      "NumPy",
-      "CNN (VGG-style)",
-      "BiLSTM",
-      "CTC Loss"
+      "Roboflow",
+      "Hugging Face Datasets",
+      "JiWER",
     ],
     featured: true,
     status: "Research Completed & Defended",
@@ -293,7 +317,7 @@ export const projectsDataEn: Project[] = [
     },
     metadata: {
       role: "Lead Machine Learning Researcher & Author",
-      duration: "6 Months",
+      duration: "Sep 2026",
       client: "Universitas Komputer Indonesia (Skripsi)",
     },
     problemStatement:
@@ -362,21 +386,28 @@ export const projectsDataEn: Project[] = [
 export const projectsDataId: Project[] = [
   {
     slug: "jawara-tiga-sekawan",
-    title: "PT. Jawara Tiga Sekawan: Redesain Web & Penguatan Keamanan",
-    category: "Pengembangan Web & Keamanan",
-    categoryLabel: "WORDPRESS / REMEDIASI MALWARE & HARDENING",
+    title: "Website B2B & Optimasi SEO",
+    subtitle: "Jawara Tiga Sekawan",
+    tagline: "Pengembangan platform B2B kustom dengan performa cepat dan arsitektur ramah mesin pencari.",
+    category: "Web Development",
+    categoryLabel: "PLATFORM B2B / TECHNICAL SEO",
+    period: "Okt 2026",
     description:
-      "Redesain website korporat dengan WordPress & Elementor, penguatan keamanan server, dan pembersihan injeksi malware SEO untuk PT. Jawara Tiga Sekawan.",
+      "Merancang dan membangun website B2B kustom dengan memadukan fleksibilitas manajemen konten WordPress, efisiensi Tailwind CSS, Schema markup, dan Google Search Console.",
     overview:
-      "Redesain website korporat dengan WordPress dan Elementor, disertai tindakan tanggap insiden untuk membersihkan injeksi malware SEO dan memulihkan reputasi indeks Google Search.",
+      "Merancang dan membangun website B2B kustom dari nol dengan memadukan fleksibilitas manajemen konten WordPress dan efisiensi Tailwind CSS. Mencakup konfigurasi penuh infrastruktur domain, implementasi structured data (Schema markup), serta integrasi Google Search Console untuk visibilitas organik maksimal.",
+    highlights: [
+      "Mengembangkan tema WordPress kustom dengan Tailwind CSS untuk performa tinggi dan kemudahan pengelolaan konten.",
+      "Menerapkan Schema.org structured data untuk meningkatkan kualitas tampilan hasil pencarian.",
+      "Mengelola konfigurasi domain serta integrasi indeksasi Google Search Console.",
+    ],
     coverImage: "/images/projects/jawaratigasekawan.png",
     technologies: [
       "WordPress",
-      "Elementor",
-      "PHP",
-      "Penguatan Server Linux",
-      "Remediasi Malware",
-      "Technical SEO"
+      "Tailwind CSS",
+      "Schema.org",
+      "Google Search Console",
+      "Technical SEO",
     ],
     featured: true,
     status: "Berjalan di Produksi",
@@ -384,7 +415,7 @@ export const projectsDataId: Project[] = [
       demo: "https://jawaratigasekawan.com",
     },
     metadata: {
-      role: "WordPress Developer & Security Specialist",
+      role: "WordPress Developer & Technical SEO Specialist",
       duration: "Oktober 2026 - Sekarang",
       client: "PT. Jawara Tiga Sekawan",
     },
@@ -451,21 +482,25 @@ export const projectsDataId: Project[] = [
   },
   {
     slug: "xena-tekno",
-    title: "CV. XENA TEKNO: Profil Perusahaan Solusi IT",
-    category: "Frontend & Rekayasa Web",
-    categoryLabel: "PROFIL PERUSAHAAN / ARSITEKTUR FRONTEND",
+    title: "Website Company Profile",
+    subtitle: "CV Xena Tekno Bandung",
+    tagline: "Identitas digital dan katalog layanan korporat untuk menjangkau klien B2B maupun B2C.",
+    category: "Web Development",
+    categoryLabel: "PROFIL PERUSAHAAN / FRONTEND",
+    period: "Agu 2025 – Feb 2026",
     description:
-      "Website profil perusahaan modern dan responsif yang dibangun untuk konsultan solusi IT guna menampilkan layanan perangkat lunak dan kapabilitas digital.",
+      "Merancang dan mengembangkan website profil perusahaan dengan struktur informasi yang terorganisir untuk mempresentasikan layanan, kapabilitas teknis, serta kredibilitas CV Xena Tekno Bandung dengan navigasi intuitif dan tampilan responsif.",
     overview:
-      "Website profil perusahaan responsif untuk konsultan solusi IT, menyajikan katalog layanan software, alur proyek, dan kompetensi tim dengan performa edge deployment.",
+      "Merancang dan mengembangkan website profil perusahaan dengan struktur informasi yang terorganisir untuk mempresentasikan layanan, kapabilitas teknis, serta kredibilitas CV Xena Tekno Bandung dengan navigasi intuitif dan tampilan responsif.",
+    highlights: [
+      "Menyusun arsitektur informasi katalog layanan dan kapabilitas teknis perusahaan.",
+      "Mengimplementasikan antarmuka responsif mobile-first di berbagai ukuran layar.",
+    ],
     coverImage: "/images/projects/xenatekno.png",
     technologies: [
-      "React",
-      "Next.js / Vercel",
-      "Tailwind CSS",
-      "Tata Letak Responsif",
-      "Arsitektur Informasi",
-      "Navigasi Aksesibel"
+      "Desain Web Responsif",
+      "Implementasi UI/UX",
+      "Frontend Web",
     ],
     featured: true,
     status: "Berjalan di Produksi",
@@ -474,8 +509,8 @@ export const projectsDataId: Project[] = [
     },
     metadata: {
       role: "Website Developer (Internship)",
-      duration: "Agustus 2025 - Oktober 2025",
-      client: "CV. XENA TEKNO",
+      duration: "Agu 2025 – Feb 2026",
+      client: "CV Xena Tekno Bandung",
     },
     problemStatement:
       "Sebagai penyedia solusi teknologi yang berkembang, CV. XENA TEKNO membutuhkan platform digital otoritatif yang dengan jelas mengomunikasikan kapabilitas rekayasa software mereka, membangun kredibilitas, dan mempermudah alur konsultasi proyek calon klien.",
@@ -540,37 +575,43 @@ export const projectsDataId: Project[] = [
   },
   {
     slug: "inventory-cashier-dss",
-    title: "Sistem Penunjang Keputusan Kasir & Inventaris",
-    category: "Pengembangan Full-Stack",
+    title: "Sistem Pendukung Keputusan (SPK) Inventaris",
+    subtitle: "Toko Nay's Cake",
+    tagline: "Aplikasi web manajemen stok berbasis data untuk mengotomatiskan prioritas pengadaan produk.",
+    category: "Web Development",
     categoryLabel: "FULL-STACK / SISTEM PENDUKUNG KEPUTUSAN",
+    period: "Jul 2025 – Feb 2026",
     description:
-      "Aplikasi inventaris, penjadwalan produksi, dan kasir berbasis web dengan algoritma pendukung keputusan multikriteria (SMART & SAW) untuk optimasi operasional.",
+      "Menggantikan proses evaluasi inventaris manual dengan sistem perhitungan objektif menggunakan metode Simple Multi-Attribute Rating Technique (SMART).",
     overview:
-      "Sistem kasir dan inventaris transaksional yang terintegrasi dengan algoritma multikriteria (SMART & SAW) untuk otomatisasi jadwal produksi dan prioritas stok.",
-    coverImage: "/images/projects/inventory-dss.png",
+      "Menggantikan proses evaluasi inventaris manual dengan sistem perhitungan objektif menggunakan metode Simple Multi-Attribute Rating Technique (SMART). Aplikasi ini mengolah berbagai kriteria produk secara real-time untuk menghasilkan peringkat prioritas stok yang akurat di atas arsitektur full-stack modern.",
+    highlights: [
+      "Mengimplementasikan algoritma pengambilan keputusan multikriteria SMART untuk otomatisasi prioritas stok.",
+      "Membangun aplikasi full-stack type-safe menggunakan Next.js, TypeScript, dan Prisma ORM.",
+      "Mengintegrasikan database relasional cloud PostgreSQL (NeonDB) untuk pengelolaan data real-time.",
+    ],
+    coverImage: "/images/projects/tampilan_naysmart.png",
     technologies: [
       "Next.js",
       "TypeScript",
       "Tailwind CSS",
       "Prisma ORM",
-      "Supabase",
-      "Algoritma SMART",
-      "Metode SAW"
+      "PostgreSQL (NeonDB)",
     ],
     featured: true,
     status: "Selesai & Diterapkan",
     links: {},
     metadata: {
       role: "Full-Stack Developer",
-      duration: "4 Bulan",
-      client: "CV. Trust Lafalo",
+      duration: "Jul 2025 – Feb 2026",
+      client: "Toko Nay's Cake",
     },
     problemStatement:
       "Bisnis manufaktur skala menengah dan usaha kuliner lokal menghadapi kendala penjadwalan manual, alokasi mesin yang tidak terkoordinasi, serta selisih stok bahan baku. Tanpa pemeringkatan sistematis, pesanan mendesak kerap tertunda dan mesin mengalami waktu menganggur (idle time).",
     solution:
       "Mengembangkan aplikasi web modern yang mengintegrasikan pemeringkatan otomatis menggunakan Simple Additive Weighting (SAW) dan Simple Multi-Attribute Rating Technique (SMART). Sistem menghitung bobot prioritas berdasarkan volume order, tenggat pelanggan, dan slot mesin, menyajikannya dalam kalender produksi interaktif.",
     technicalArchitecture:
-      "Dibangun dengan Next.js App Router untuk rendering sisi server, dipadukan dengan Supabase PostgreSQL untuk konsistensi data transaksional ACID. Prisma ORM menjamin keamanan pengetikan tipe di seluruh operasi database. Mesin pembobotan menjalankan kalkulasi deterministik di backend sebelum alokasi antrean jadwal dilakukan.",
+      "Dibangun dengan Next.js App Router untuk rendering sisi server, dipadukan dengan PostgreSQL (NeonDB) untuk konsistensi data transaksional ACID. Prisma ORM menjamin keamanan pengetikan tipe di seluruh operasi database. Mesin pembobotan menjalankan kalkulasi deterministik di backend sebelum alokasi antrean jadwal dilakukan.",
     sections: [
       {
         heading: "01. Konteks Bisnis & Tantangan Lapangan",
@@ -615,9 +656,9 @@ export const projectsDataId: Project[] = [
     ],
     gallery: [
       {
-        url: "/images/projects/inventory-dss.png",
-        caption: "Dashboard Penjadwalan Produksi Otomatis & Kalender Linimasa dengan Pelacak Ketepatan Waktu 100%",
-        alt: "Pratinjau Dashboard Sistem Penjadwalan CV Trust Lafalo",
+        url: "/images/projects/tampilan_naysmart.png",
+        caption: "Tampilan Dashboard Sistem Pendukung Keputusan Inventaris Toko Nay's Cake",
+        alt: "Pratinjau Dashboard SPK Toko Nay's Cake",
       },
     ],
     challengesAndLessons: [
@@ -628,22 +669,29 @@ export const projectsDataId: Project[] = [
   },
   {
     slug: "indonesian-handwriting-ocr",
-    title: "Pengenalan Citra Kata Tulisan Tangan Bahasa Indonesia",
-    category: "AI & Computer Vision",
+    title: "Offline Handwritten Text Recognition (OCR) Jawaban Esai",
+    subtitle: "Skripsi – UNIKOM",
+    tagline: "Sistem transkripsi otomatis tulisan tangan bahasa Indonesia berbasis deep learning.",
+    category: "Machine Learning & CV",
     categoryLabel: "DEEP LEARNING / COMPUTER VISION",
+    period: "Sep 2026",
     description:
-      "Sistem deep learning end-to-end untuk mengenali kata tulisan tangan bahasa Indonesia offline menggunakan arsitektur sekuensial CNN-BiLSTM-CTC berbasis PyTorch.",
+      "Mengembangkan pipeline Computer Vision end-to-end untuk mengenali dan mengekstrak teks tulisan tangan pada lembar jawaban esai menggunakan model sekuensial CNN-BiLSTM-CTC di PyTorch.",
     overview:
-      "Pengenalan kata tulisan tangan offline menggunakan arsitektur sekuensial CNN-BiLSTM-CTC di PyTorch. Meraih 12.4% CER dan 24.8% WER pada 2.500+ citra kata tanpa segmentasi karakter manual.",
+      "Mengembangkan pipeline Computer Vision end-to-end untuk mengenali dan mengekstrak teks tulisan tangan pada lembar jawaban esai. Alur kerja mencakup anotasi bounding box (format COCO JSON) menggunakan Roboflow, preprocessing citra menggunakan OpenCV, hingga pelatihan model hibrida CNN-BiLSTM-CTC di PyTorch dengan evaluasi CER dan WER melalui JiWER.",
+    highlights: [
+      "Merancang arsitektur deep learning hibrida CNN-BiLSTM-CTC untuk pengenalan urutan karakter tulisan tangan.",
+      "Mengelola kurasi dataset dan anotasi bounding box format COCO JSON menggunakan Roboflow & Hugging Face Datasets.",
+      "Menerapkan preprocessing citra OpenCV dan evaluasi kuantitatif Character/Word Error Rate (CER/WER) dengan JiWER.",
+    ],
     coverImage: "/images/projects/ocr-hero.svg",
     technologies: [
       "Python",
       "PyTorch",
       "OpenCV",
-      "NumPy",
-      "CNN (VGG-style)",
-      "BiLSTM",
-      "CTC Loss"
+      "Roboflow",
+      "Hugging Face Datasets",
+      "JiWER",
     ],
     featured: true,
     status: "Riset Selesai & Disidangkan",
@@ -652,7 +700,7 @@ export const projectsDataId: Project[] = [
     },
     metadata: {
       role: "Lead Machine Learning Researcher & Author",
-      duration: "6 Bulan",
+      duration: "Sep 2026",
       client: "Universitas Komputer Indonesia (Skripsi)",
     },
     problemStatement:

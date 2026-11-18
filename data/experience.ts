@@ -2,36 +2,54 @@ import { ExperienceItem, Language } from "@/types";
 
 export const experienceDataEn: ExperienceItem[] = [
   {
-    role: "Website Developer & Engineer",
+    role: "Website Developer & Technical SEO Specialist",
     organization: "PT. Jawara Tiga Sekawan",
     location: "Kota Bandung, Jawa Barat",
-    period: "Oktober 2026 - Present",
+    period: "Oct 2026 - Present",
     type: "employment",
     description:
-      "Led the complete architectural redesign and security hardening of the corporate official website and B2B marketing landing pages.",
+      "Engineered a custom high-performance B2B web platform and technical SEO infrastructure to maximize search visibility and commercial discoverability.",
     contributions: [
-      "Engineered high-performance landing pages featuring modern editorial design and smooth parallax scrolling.",
-      "Conducted thorough backend security audit and remediated malicious SEO spam and fake captcha vulnerabilities.",
-      "Updated core server files, optimized PHP 8.5 performance runtime, and resolved technical SEO indexing issues.",
-      "Produced responsive visual marketing assets aligned with the company's brand identity."
+      "Developed a custom WordPress theme styled with Tailwind CSS for rapid load times and streamlined content management.",
+      "Implemented Schema.org structured data markup to achieve rich search engine results and enhanced CTR.",
+      "Configured domain DNS infrastructure, Apache security execution barriers, and Google Search Console indexing pipelines.",
+      "Conducted incident response to eliminate legacy malware redirects and restore clean domain reputation."
     ],
-    skills: ["Web Engineering", "Security Remediation", "PHP 8.5", "Technical SEO", "Performance Optimization"],
+    skills: ["WordPress", "Tailwind CSS", "Schema.org", "Google Search Console", "Technical SEO"],
     status: "Active Role",
   },
   {
+    role: "Full-Stack Developer (Contract)",
+    organization: "Toko Nay's Cake",
+    location: "Kota Bandung, Jawa Barat",
+    period: "Jul 2025 – Feb 2026",
+    type: "contract",
+    description:
+      "Architected and deployed an Inventory Decision Support System (DSS) automating product restock prioritization through multi-criteria decision analysis.",
+    contributions: [
+      "Implemented the SMART multi-criteria decision analysis algorithm to automate product restock prioritization.",
+      "Architected a type-safe full-stack web application using Next.js, TypeScript, and Prisma ORM.",
+      "Integrated serverless PostgreSQL storage via NeonDB for reliable real-time inventory tracking.",
+      "Designed responsive inventory management dashboards with role-based access for operational staff."
+    ],
+    skills: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma ORM", "PostgreSQL (NeonDB)", "SMART Algorithm"],
+    status: "Completed",
+  },
+  {
     role: "Website Developer (Internship)",
-    organization: "CV. XENA TEKNO",
-    location: "Kota Cimahi, Jawa Barat",
-    period: "Agustus 2025 - Oktober 2025",
+    organization: "CV Xena Tekno Bandung",
+    location: "Kota Bandung, Jawa Barat",
+    period: "Aug 2025 – Feb 2026",
     type: "internship",
     description:
-      "Contributed to building the official company profile website for an IT solutions firm, establishing a credible digital showcase for clients.",
+      "Architected and delivered the corporate profile website for an IT solutions firm, establishing a professional digital presence and structured service catalog.",
     contributions: [
-      "Developed responsive, clean user interfaces showcasing company services, team profiles, and product offerings.",
-      "Collaborated with project stakeholders to structure information architecture for prospective enterprise clients.",
-      "Ensured cross-browser compatibility and accessible navigation standards across desktop and mobile devices."
+      "Structured corporate service catalogs and technical capability pages for clear client communication.",
+      "Delivered a mobile-first, responsive UI/UX optimized for cross-device compatibility.",
+      "Enforced WCAG contrast standards, fast asset loading, and accessible navigation across desktop and mobile devices."
     ],
-    skills: ["Company Profile Engineering", "UI Implementation", "Responsive Design", "Client Presentation"],
+    skills: ["Responsive Web Design", "UI/UX Implementation", "Frontend Web", "Vercel"],
+    status: "Completed",
   },
   {
     role: "Bachelor of Computer Science (S1 Teknik Informatika)",
@@ -40,13 +58,14 @@ export const experienceDataEn: ExperienceItem[] = [
     period: "2022 - 2026",
     type: "education",
     description:
-      "Completed 4-year undergraduate degree with an emphasis on Software Engineering, Algorithm Analysis, and Artificial Intelligence.",
+      "Four-year undergraduate degree focusing on Software Engineering, Algorithm Analysis, and Deep Learning Computer Vision.",
     contributions: [
-      "Undergraduate Thesis: 'Pengenalan Citra Kata Tulisan Tangan Menggunakan Arsitektur CNN-BiLSTM' (Sequential Handwritten Word Recognition).",
-      "Deep dive into machine learning models, computer vision pipelines, linear algebra, and data structures.",
-      "Focused on full-stack web architectures, sequential deep learning, and algorithmic problem solving."
+      "Undergraduate Thesis: 'Offline Handwritten Text Recognition (HTR) for Essay Grading' using a hybrid CNN-BiLSTM-CTC architecture in PyTorch.",
+      "Curated and annotated custom handwriting datasets in COCO JSON format using Roboflow and Hugging Face Datasets.",
+      "Implemented OpenCV image preprocessing pipelines and evaluated model accuracy with CER/WER metrics via JiWER.",
+      "Graduated with comprehensive coursework in algorithm design, linear algebra, and data structures."
     ],
-    skills: ["Deep Learning", "PyTorch", "Computer Vision", "Software Engineering", "Algorithms"],
+    skills: ["Python", "PyTorch", "OpenCV", "Roboflow", "Hugging Face Datasets", "JiWER"],
     status: "Graduated 2026",
   },
   {
@@ -58,45 +77,64 @@ export const experienceDataEn: ExperienceItem[] = [
     description:
       "National certification in Software and Programming Development (Pengembangan Perangkat Lunak dan Pemrograman).",
     contributions: [
-      "Validated competencies in software development life cycle, structured code writing, testing, and debugging.",
-      "Certified under national qualification standards for professional software practitioners."
+      "Validated competencies across the software development life cycle, structured code writing, testing, and debugging.",
+      "Certified under national qualification standards for professional software engineering practitioners."
     ],
     skills: ["Software Engineering Standards", "Code Quality", "Testing & Verification"],
+    status: "Certified",
   },
 ];
 
 export const experienceDataId: ExperienceItem[] = [
   {
-    role: "Website Developer & Engineer",
+    role: "Website Developer & Technical SEO Specialist",
     organization: "PT. Jawara Tiga Sekawan",
     location: "Kota Bandung, Jawa Barat",
     period: "Oktober 2026 - Sekarang",
     type: "employment",
     description:
-      "Memimpin perancangan ulang arsitektur dan penguatan keamanan website resmi korporat serta landing page pemasaran B2B.",
+      "Mengembangkan platform web B2B kustom berkinerja tinggi serta infrastruktur SEO teknis untuk memaksimalkan visibilitas pencarian dan jangkauan bisnis.",
     contributions: [
-      "Mengembangkan landing page performa tinggi dengan desain editorial modern dan transisi parallax yang halus.",
-      "Melakukan audit keamanan backend menyeluruh dan membersihkan celah malware injeksi spam SEO serta fake captcha.",
-      "Memperbarui file inti server, mengoptimalkan runtime PHP 8.5, dan memulihkan pengindeksan teknis SEO di Google Search Console.",
-      "Memproduksi aset visual responsif yang selaras dengan identitas brand korporat."
+      "Mengembangkan tema WordPress kustom dengan Tailwind CSS untuk kecepatan akses tinggi dan kemudahan pembaruan konten.",
+      "Menerapkan structured data Schema.org untuk meningkatkan kualitas tampilan hasil pencarian di mesin pencari.",
+      "Mengonfigurasi infrastruktur DNS domain, proteksi eksekusi Apache, dan pipeline indeksasi Google Search Console.",
+      "Mengeksekusi respons insiden untuk membersihkan pengalihan malware dan memulihkan reputasi domain."
     ],
-    skills: ["Rekayasa Web", "Remediasi Keamanan", "PHP 8.5", "Technical SEO", "Optimasi Performa"],
+    skills: ["WordPress", "Tailwind CSS", "Schema.org", "Google Search Console", "Technical SEO"],
     status: "Peran Aktif",
   },
   {
+    role: "Full-Stack Developer (Kontrak)",
+    organization: "Toko Nay's Cake",
+    location: "Kota Bandung, Jawa Barat",
+    period: "Juli 2025 – Februari 2026",
+    type: "contract",
+    description:
+      "Merancang dan membangun Sistem Pendukung Keputusan (SPK) inventaris untuk mengotomatisasi prioritas restok produk melalui analisis multikriteria.",
+    contributions: [
+      "Mengimplementasikan algoritma analisis keputusan multikriteria SMART untuk otomatisasi prioritas restok produk.",
+      "Membangun aplikasi full-stack type-safe menggunakan Next.js, TypeScript, dan Prisma ORM.",
+      "Mengintegrasikan database relasional serverless PostgreSQL via NeonDB untuk pelacakan inventaris real-time.",
+      "Merancang dasbor manajemen inventaris responsif dengan kontrol akses berbasis peran."
+    ],
+    skills: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma ORM", "PostgreSQL (NeonDB)", "Algoritma SMART"],
+    status: "Selesai",
+  },
+  {
     role: "Website Developer (Internship)",
-    organization: "CV. XENA TEKNO",
-    location: "Kota Cimahi, Jawa Barat",
-    period: "Agustus 2025 - Oktober 2025",
+    organization: "CV Xena Tekno Bandung",
+    location: "Kota Bandung, Jawa Barat",
+    period: "Agustus 2025 – Februari 2026",
     type: "internship",
     description:
-      "Berkontribusi dalam pengembangan website profil perusahaan resmi untuk konsultan solusi IT, menciptakan etalase digital terpercaya bagi klien.",
+      "Merancang dan mengembangkan website profil perusahaan untuk konsultan solusi IT, menghadirkan etalase digital profesional dan katalog layanan terstruktur.",
     contributions: [
-      "Mengembangkan antarmuka responsif yang menyajikan katalog layanan IT perusahaan, profil tim, dan penawaran produk teknologi.",
-      "Berkolaborasi dengan pemangku kepentingan untuk menyusun arsitektur informasi yang terstruktur bagi calon klien korporat.",
-      "Memastikan kompatibilitas lintas peramban dan standar navigasi aksesibel di desktop maupun perangkat seluler."
+      "Menyusun arsitektur informasi katalog layanan dan kapabilitas teknis perusahaan untuk komunikasi klien yang jelas.",
+      "Mengimplementasikan antarmuka responsif mobile-first yang dioptimalkan untuk kompatibilitas lintas perangkat.",
+      "Menerapkan standar kontras WCAG, optimasi aset, dan kompatibilitas lintas perangkat."
     ],
-    skills: ["Rekayasa Profil Perusahaan", "Implementasi UI", "Desain Responsif", "Presentasi Klien"],
+    skills: ["Desain Web Responsif", "Implementasi UI/UX", "Frontend Web", "Vercel"],
+    status: "Selesai",
   },
   {
     role: "Sarjana Komputer (S1 Teknik Informatika)",
@@ -105,13 +143,14 @@ export const experienceDataId: ExperienceItem[] = [
     period: "2022 - 2026",
     type: "education",
     description:
-      "Menyelesaikan program sarjana 4 tahun dengan fokus pada Rekayasa Perangkat Lunak, Analisis Algoritma, dan Kecerdasan Buatan.",
+      "Pendidikan sarjana 4 tahun berfokus pada Rekayasa Perangkat Lunak, Analisis Algoritma, dan Deep Learning Computer Vision.",
     contributions: [
-      "Skripsi: 'Pengenalan Citra Kata Tulisan Tangan Menggunakan Arsitektur CNN-BiLSTM' (Sequential Handwritten Word Recognition).",
-      "Mendalami model machine learning, pipeline computer vision, aljabar linier, dan struktur data.",
-      "Berfokus pada arsitektur web full-stack, deep learning sekuensial, dan pemecahan masalah algoritmik."
+      "Skripsi: 'Offline Handwritten Text Recognition (OCR) Jawaban Esai' menggunakan arsitektur hibrida CNN-BiLSTM-CTC di PyTorch.",
+      "Mengelola kurasi dataset dan anotasi bounding box format COCO JSON menggunakan Roboflow dan Hugging Face Datasets.",
+      "Menerapkan preprocessing citra OpenCV dan evaluasi akurasi Character/Word Error Rate (CER/WER) dengan JiWER.",
+      "Menyelesaikan kurikulum dengan fokus pada perancangan algoritma, aljabar linier, dan struktur data."
     ],
-    skills: ["Deep Learning", "PyTorch", "Computer Vision", "Rekayasa Perangkat Lunak", "Algoritma"],
+    skills: ["Python", "PyTorch", "OpenCV", "Roboflow", "Hugging Face Datasets", "JiWER"],
     status: "Lulus 2026",
   },
   {
@@ -123,10 +162,11 @@ export const experienceDataId: ExperienceItem[] = [
     description:
       "Sertifikasi kompetensi nasional Badan Nasional Sertifikasi Profesi (BNSP) bidang Pengembangan Perangkat Lunak dan Pemrograman.",
     contributions: [
-      "Memvalidasi kompetensi dalam siklus hidup pengembangan software, penulisan kode terstruktur, pengujian, dan debugging.",
+      "Uji kompetensi terstandarisasi mencakup seluruh siklus hidup pengembangan software, penulisan kode terstruktur, pengujian, dan debugging.",
       "Tersertifikasi di bawah standar kualifikasi nasional kerja profesional teknologi informasi."
     ],
     skills: ["Standar Rekayasa Software", "Kualitas Kode", "Pengujian & Verifikasi"],
+    status: "Tersertifikasi",
   },
 ];
 

@@ -47,26 +47,51 @@ export function FeaturedProject({ project, reverse = false }: FeaturedProjectPro
 
         {/* Content & Metadata */}
         <div
-          className={`lg:col-span-5 space-y-5 ${
+          className={`lg:col-span-5 space-y-4 ${
             reverse ? "lg:order-1" : "lg:order-2"
           }`}
         >
-          {/* Eyebrow & Category */}
-          <div className="font-mono text-xs">
+          {/* Eyebrow & Category & Period */}
+          <div className="flex flex-wrap items-center gap-2 font-mono text-xs">
             <span className="text-accent-text uppercase tracking-wider font-semibold">
               {project.categoryLabel}
             </span>
+            {project.period && (
+              <>
+                <span className="text-foreground-muted select-none">/</span>
+                <time className="text-foreground-muted font-normal">{project.period}</time>
+              </>
+            )}
           </div>
 
-          {/* Title */}
-          <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground group-hover:text-accent-text transition-colors">
-            <Link href={`/projects/${project.slug}`}>{project.title}</Link>
-          </h3>
+          {/* Title & Subtitle */}
+          <div>
+            <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground group-hover:text-accent-text transition-colors">
+              <Link href={`/projects/${project.slug}`}>{project.title}</Link>
+            </h3>
+            {project.subtitle && (
+              <p className="mt-1 font-mono text-xs sm:text-sm text-foreground-muted">
+                {project.subtitle}
+              </p>
+            )}
+          </div>
 
           {/* Description */}
           <p className="text-sm sm:text-base text-foreground-secondary leading-relaxed">
-            {project.overview}
+            {project.description || project.overview}
           </p>
+
+          {/* Highlights */}
+          {project.highlights && project.highlights.length > 0 && (
+            <ul className="space-y-1.5 pt-0.5">
+              {project.highlights.map((item, i) => (
+                <li key={i} className="flex items-start gap-2 text-xs sm:text-sm text-foreground-secondary leading-relaxed">
+                  <span className="text-accent-text select-none text-[10px] mt-1" aria-hidden="true">■</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          )}
 
           {/* Tech Tags */}
           <div className="flex flex-wrap gap-1.5 pt-1">

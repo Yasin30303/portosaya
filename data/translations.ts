@@ -61,6 +61,9 @@ export interface TranslationSchema {
     navNext: string;
     navFirst: string;
     navEnd: string;
+    filterAll: string;
+    filterWeb: string;
+    filterML: string;
   };
   skills: {
     index: string;
@@ -176,6 +179,9 @@ export const translations: Record<Language, TranslationSchema> = {
       navNext: "NEXT PROJECT",
       navFirst: "First Project",
       navEnd: "End of Projects",
+      filterAll: "All",
+      filterWeb: "Web Development",
+      filterML: "Machine Learning & CV",
     },
     skills: {
       index: "03 //",
@@ -196,14 +202,14 @@ export const translations: Record<Language, TranslationSchema> = {
     contact: {
       index: "05 //",
       eyebrow: "CONTACT",
-      title: "Let's discuss a technical role or project.",
-      description: "Available for Junior Full-Stack and Machine Learning positions, contracts, and technical collaborations.",
-      statusText: "Bandung, Indonesia (UTC+7) · Open to Remote & Hybrid",
+      title: "Let’s build something impactful together.",
+      description: "Available for full-stack web development, custom CMS architecture, or computer vision collaborations. Reach out directly via email, GitHub, or WhatsApp.",
+      statusText: "",
       primaryChannel: "DIRECT INQUIRIES",
       copyEmail: "COPY",
       copiedEmail: "COPIED",
-      sendEmail: "Send Email",
-      githubProfile: "GitHub Profile",
+      sendEmail: "Email",
+      githubProfile: "GitHub",
       locationLabel: "LOCATION",
       phoneLabel: "PHONE / WHATSAPP",
       phoneAction: "WhatsApp",
@@ -289,6 +295,9 @@ export const translations: Record<Language, TranslationSchema> = {
       navNext: "PROYEK SELANJUTNYA",
       navFirst: "Proyek Pertama",
       navEnd: "Akhir Daftar Proyek",
+      filterAll: "Semua",
+      filterWeb: "Pengembangan Web",
+      filterML: "Machine Learning & CV",
     },
     skills: {
       index: "03 //",
@@ -309,18 +318,18 @@ export const translations: Record<Language, TranslationSchema> = {
     contact: {
       index: "05 //",
       eyebrow: "KONTAK",
-      title: "Mari diskusikan peluang kerja atau proyek.",
-      description: "Terbuka untuk posisi Junior Full-Stack, Machine Learning, proyek kontrak, dan kolaborasi teknis.",
-      statusText: "Bandung, Indonesia (UTC+7) · Terbuka Remote & Hybrid",
-      primaryChannel: "SALURAN UTAMA",
+      title: "Mari bangun sesuatu yang berdampak bersama.",
+      description: "Terbuka untuk pengembangan web full-stack, arsitektur CMS kustom, atau kolaborasi computer vision. Hubungi langsung melalui email, GitHub, atau WhatsApp.",
+      statusText: "",
+      primaryChannel: "SALURAN LANGSUNG",
       copyEmail: "SALIN",
       copiedEmail: "TERSALIN",
-      sendEmail: "Kirim Email",
-      githubProfile: "Profil GitHub",
+      sendEmail: "Email",
+      githubProfile: "GitHub",
       locationLabel: "LOKASI",
       phoneLabel: "TELEPON / WHATSAPP",
       phoneAction: "WhatsApp",
-      waMessage: "Halo Yasin, saya melihat portfolio Anda dan ingin mendiskusikan peluang kerja.",
+      waMessage: "Halo Yasin, saya melihat portofolio Anda dan ingin mendiskusikan peluang kerja atau proyek.",
     },
     footer: {
       navigation: "NAVIGASI",

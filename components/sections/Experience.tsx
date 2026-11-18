@@ -12,6 +12,14 @@ export function Experience() {
   const { language, t } = useLanguage();
   const experienceData = getExperienceData(language);
 
+  const typeLabels: Record<string, { en: string; id: string }> = {
+    employment: { en: "Employment", id: "Pekerjaan" },
+    contract: { en: "Contract", id: "Kontrak" },
+    internship: { en: "Internship", id: "Magang" },
+    education: { en: "Education", id: "Pendidikan" },
+    certification: { en: "Certification", id: "Sertifikasi" },
+  };
+
   return (
     <section id="experience" className="py-16 md:py-24 scroll-mt-24">
       <Container>
@@ -33,14 +41,21 @@ export function Experience() {
                   <span className="w-2 h-2 rounded-full bg-accent" />
                 </div>
 
-                {/* Main Content Card */}
-                <div className="p-6 sm:p-8 rounded-2xl border border-border/80 bg-surface/40 hover:bg-surface/75 hover:border-accent/30 transition-all duration-200 space-y-4">
+                {/* Main Content Article Card */}
+                <article className="p-6 sm:p-8 rounded-2xl border border-border/80 bg-surface/40 hover:bg-surface/75 hover:border-accent/30 transition-all duration-200 space-y-4">
                   {/* Header Meta */}
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-border/60 pb-4">
-                    <div>
-                      <h3 className="text-lg sm:text-xl font-bold text-foreground">
-                        {item.role}
-                      </h3>
+                  <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 border-b border-border/60 pb-4">
+                    <div className="space-y-1">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <h3 className="text-lg sm:text-xl font-bold text-foreground">
+                          {item.role}
+                        </h3>
+                        {item.type && (
+                          <span className="font-mono text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-md bg-surface-hover/80 border border-border/80 text-foreground-secondary font-medium">
+                            {typeLabels[item.type]?.[language] || item.type}
+                          </span>
+                        )}
+                      </div>
                       <div className="text-sm font-medium text-accent-text">
                         {item.organization} /{" "}
                         <span className="text-muted font-normal text-xs">
@@ -49,10 +64,10 @@ export function Experience() {
                       </div>
                     </div>
 
-                    <div className="flex items-center gap-2">
-                      <span className="font-mono text-xs px-2.5 py-1 rounded-md border border-border bg-surface text-muted">
+                    <div className="flex flex-wrap items-center gap-2 shrink-0">
+                      <time className="font-mono text-xs px-2.5 py-1 rounded-md border border-border bg-surface text-muted">
                         {item.period}
-                      </span>
+                      </time>
                       {item.status && (
                         <span className="font-mono text-[11px] px-2 py-0.5 rounded-md bg-accent/15 text-accent-text font-semibold border border-accent/30">
                           {item.status}
@@ -84,7 +99,7 @@ export function Experience() {
                       ))}
                     </div>
                   )}
-                </div>
+                </article>
               </div>
             </FadeIn>
           ))}
